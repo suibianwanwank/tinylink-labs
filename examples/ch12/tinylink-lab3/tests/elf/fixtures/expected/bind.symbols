@@ -1,0 +1,11 @@
+
+Symbol table '.symtab' contains 8 entries:
+   Num:    Value          Size Type    Bind   Vis      Ndx Name
+     0: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 0000000000000000     0 FILE    LOCAL  DEFAULT  ABS bind.c
+     2: 0000000000000000     0 SECTION LOCAL  DEFAULT    2 .text
+     3: 0000000000000000     4 OBJECT  LOCAL  DEFAULT    4 hits
+     4: 0000000000000000     0 SECTION LOCAL  DEFAULT    4 .bss
+     5: 0000000000000000     3 FUNC    WEAK   DEFAULT    2 hook
+     6: 0000000000000010    43 FUNC    GLOBAL DEFAULT    2 poke
+     7: 0000000000000000     0 NOTYPE  WEAK   DEFAULT  UND maybe

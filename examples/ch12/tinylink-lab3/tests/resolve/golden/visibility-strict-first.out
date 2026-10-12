@@ -1,0 +1,7 @@
+v
+    vhidref.o   UND    GLOBAL  NOTYPE  HIDDEN
+    vdefault.o  .data  GLOBAL  NOTYPE  DEFAULT  size 0
+  => vdefault.o:(.data+0x0), size 0, HIDDEN
+_start
+    vhidref.o  .text  GLOBAL  NOTYPE  DEFAULT  size 0
+  => vhidref.o:(.text+0x0), size 0

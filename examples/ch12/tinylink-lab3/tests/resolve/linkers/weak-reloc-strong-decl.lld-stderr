@@ -1,0 +1,2 @@
+tinylink: error: undefined symbol: hook
+>>> referenced by wk.o:(.text+0x1)

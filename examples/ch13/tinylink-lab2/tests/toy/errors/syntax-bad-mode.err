@@ -1,0 +1,1 @@
+syntax-bad-mode.tl:6:5: error: expected an address mode (I, A, R or E) or 'end', found 'X'

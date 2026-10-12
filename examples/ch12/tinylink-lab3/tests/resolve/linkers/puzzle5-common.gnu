@@ -1,0 +1,3 @@
+status 0
+main p5-a-common.o .text size 7
+n p5-a-common.o COMMON size 4 align ?

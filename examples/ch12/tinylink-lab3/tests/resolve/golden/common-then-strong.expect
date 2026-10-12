@@ -1,0 +1,2 @@
+# expect: exit 0
+# args: resolve cbig.o n2def.o

@@ -1,0 +1,2 @@
+# expect: exit 0
+# args: resolve vref.o hid.o

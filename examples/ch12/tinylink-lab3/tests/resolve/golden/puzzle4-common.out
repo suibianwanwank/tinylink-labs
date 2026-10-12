@@ -1,0 +1,7 @@
+main
+    p4-a-common.o  .text  GLOBAL  FUNC  DEFAULT  size 7
+  => p4-a-common.o:(.text+0x0), size 7
+n
+    p4-a-common.o  .data  GLOBAL  OBJECT  DEFAULT  size 4
+    p4-b-common.o  .data  WEAK    OBJECT  DEFAULT  size 4
+  => p4-a-common.o:(.data+0x0), size 4

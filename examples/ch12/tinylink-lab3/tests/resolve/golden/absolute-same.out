@@ -1,0 +1,7 @@
+K
+    abs1.o  ABS  GLOBAL  NOTYPE  DEFAULT  value 0x2a
+    abs2.o  ABS  GLOBAL  NOTYPE  DEFAULT  value 0x2a
+  => abs1.o: absolute 0x2a
+_start
+    abs1.o  .text  GLOBAL  NOTYPE  DEFAULT  size 0
+  => abs1.o:(.text+0x0), size 0

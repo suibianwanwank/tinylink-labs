@@ -1,0 +1,2 @@
+# expect: error "duplicate symbol: f"
+# args: resolve dupa.o dupb.o

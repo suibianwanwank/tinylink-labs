@@ -1,0 +1,9 @@
+[package]
+name = "machoinfo"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+
+# Companion tools are independent of the implementation-lab workspace.
+[workspace]

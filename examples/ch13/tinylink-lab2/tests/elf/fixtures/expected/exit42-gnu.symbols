@@ -1,0 +1,8 @@
+
+Symbol table '.symtab' contains 5 entries:
+   Num:    Value          Size Type    Bind   Vis      Ndx Name
+     0: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 0000000000401000    12 FUNC    GLOBAL DEFAULT    1 _start
+     2: 0000000000402000     0 NOTYPE  GLOBAL DEFAULT    1 __bss_start
+     3: 0000000000402000     0 NOTYPE  GLOBAL DEFAULT    1 _edata
+     4: 0000000000402000     0 NOTYPE  GLOBAL DEFAULT    1 _end

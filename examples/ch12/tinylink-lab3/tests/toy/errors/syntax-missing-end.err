@@ -1,0 +1,1 @@
+syntax-missing-end.tl:5:11: error: expected an address mode (I, A, R or E) or 'end', found end of file

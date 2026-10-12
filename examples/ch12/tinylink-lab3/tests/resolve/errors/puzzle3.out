@@ -1,0 +1,7 @@
+main
+    p3-a.o  .text  GLOBAL  FUNC  DEFAULT  size 7
+  => p3-a.o:(.text+0x0), size 7
+n
+    p3-a.o  .data  GLOBAL  OBJECT  DEFAULT  size 4
+    p3-b.o  .bss   GLOBAL  OBJECT  DEFAULT  size 4
+  => p3-a.o:(.data+0x0), size 4

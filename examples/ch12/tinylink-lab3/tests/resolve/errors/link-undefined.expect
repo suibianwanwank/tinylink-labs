@@ -1,0 +1,2 @@
+# expect: error "undefined symbol: f"
+# args: link -o out.tmp callf.o

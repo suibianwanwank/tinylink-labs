@@ -1,0 +1,7 @@
+hook
+    wk.o  UND  WEAK    NOTYPE  DEFAULT
+    sk.o  UND  GLOBAL  NOTYPE  DEFAULT
+  => undefined
+_start
+    wk.o  .text  GLOBAL  NOTYPE  DEFAULT  size 0
+  => wk.o:(.text+0x0), size 0

@@ -1,0 +1,1 @@
+# expect: error "writable.o: section '.data' is not supported yet: it is writable, and the only segment is read-only"

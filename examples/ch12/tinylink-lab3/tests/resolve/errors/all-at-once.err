@@ -1,0 +1,9 @@
+tinylink: error: duplicate symbol: counter
+>>> defined at s1.c
+>>>            s1.o:(counter)
+>>> defined at s2.c
+>>>            s2.o:(.data+0x0)
+
+tinylink: error: undefined symbol: f
+>>> referenced by um.c
+>>>               um.o:(main)

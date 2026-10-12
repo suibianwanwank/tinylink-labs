@@ -1,0 +1,2 @@
+definition-in-empty-module.tl:9:7: error: symbol 'q' is defined in module 'empty', which has no words; ignoring the definition
+definition-in-empty-module.tl:6:8: error: undefined symbol 'q'; using address 0

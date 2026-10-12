@@ -1,0 +1,16 @@
+p1
+    p7-a.o  .text  GLOBAL  FUNC  DEFAULT  size 1
+  => p7-a.o:(.text+0x0), size 1
+main
+    p7-a.o  .text  GLOBAL  FUNC  DEFAULT  size 13
+  => p7-a.o:(.text+0x10), size 13
+y
+    p7-a.o  .data  GLOBAL  OBJECT  DEFAULT  size 4
+  => p7-a.o:(.data+0x4), size 4
+x
+    p7-a.o  .data  GLOBAL  OBJECT  DEFAULT  size 4
+    p7-b.o  .bss   GLOBAL  OBJECT  DEFAULT  size 8
+  => p7-a.o:(.data+0x0), size 4
+p2
+    p7-b.o  .text  GLOBAL  FUNC  DEFAULT  size 18
+  => p7-b.o:(.text+0x0), size 18

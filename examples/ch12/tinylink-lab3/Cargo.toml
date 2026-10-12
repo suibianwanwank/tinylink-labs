@@ -1,0 +1,20 @@
+[package]
+name = "tinylink"
+version = "0.1.0"
+edition = "2024"
+# let chains（`if let ... && ...`）在 1.88 稳定；as_chunks 也要 1.88。
+rust-version = "1.88"
+description = "A linker written from scratch, one milestone at a time"
+publish = false
+
+# 刻意不引入第三方依赖：每个里程碑只用标准库，读者能读懂仓库里的每一行。
+[dependencies]
+
+[lints.rust]
+unsafe_code = "forbid"
+
+# clippy 用默认级别：correctness 组是 deny，其余是 warn。
+# 门禁命令是 `cargo clippy --all-targets -- -D warnings`，把所有警告当成错误。
+
+# Companion tools are independent of the implementation-lab workspace.
+[workspace]

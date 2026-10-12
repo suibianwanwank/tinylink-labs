@@ -1,0 +1,14 @@
+[package]
+name = "verdump"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+publish = false
+
+# tinylink 实验 2（tag lab2）的 ElfFile API。run.sh 用 git archive 把它导出到旁边的 tinylink-lab2/，
+# 不改 tinylink 仓库本身。
+[dependencies]
+tinylink = { path = "../tinylink-lab2" }
+
+# Companion tools are independent of the implementation-lab workspace.
+[workspace]

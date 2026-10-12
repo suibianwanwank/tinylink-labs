@@ -1,0 +1,6 @@
+_start
+    dbg.o  .text  GLOBAL  NOTYPE  DEFAULT  size 0
+  => dbg.o:(.text+0x0), size 0
+u
+    dbg.o  UND  GLOBAL  NOTYPE  DEFAULT
+  => undefined

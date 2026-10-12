@@ -1,0 +1,7 @@
+_start
+    dupa.o  .text  GLOBAL  NOTYPE  DEFAULT  size 0
+  => dupa.o:(.text+0x0), size 0
+f
+    dupa.o  .text  GLOBAL  NOTYPE  DEFAULT  size 0
+    dupb.o  .data  GLOBAL  NOTYPE  DEFAULT  size 0
+  => dupa.o:(.text+0x1), size 0

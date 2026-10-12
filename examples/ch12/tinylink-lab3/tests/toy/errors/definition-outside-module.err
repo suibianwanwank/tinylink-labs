@@ -1,0 +1,1 @@
+definition-outside-module.tl:8:7: error: symbol 'far' is defined at offset 2, but module 'b' has only 2 words; using offset 0

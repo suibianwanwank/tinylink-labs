@@ -1,0 +1,1 @@
+tinylink: error: no-start.o: entry symbol '_start' is not defined (it must be a global symbol in an allocated section)

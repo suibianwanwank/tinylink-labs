@@ -1,0 +1,3 @@
+status 0
+_start cbigfirst.o .text size 0
+buf cbigfirst.o COMMON size 8 align ?

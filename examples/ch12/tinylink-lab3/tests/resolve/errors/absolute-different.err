@@ -1,0 +1,3 @@
+tinylink: error: duplicate symbol: K
+>>> defined in abs1.o
+>>> defined in abs3.o

@@ -1,0 +1,11 @@
+--- /dev/fd/11	2026-10-04 18:13:55
++++ src/elf/types.rs	2026-10-04 18:13:27
+@@ -198,6 +198,8 @@
+     pub const WRITE: u64 = 0x1;
+     pub const ALLOC: u64 = 0x2;
+     pub const EXECINSTR: u64 = 0x4;
++    /// 内容以 `Elf64_Chdr` 开头、后跟压缩数据（第 11 章）。
++    pub const COMPRESSED: u64 = 0x800;
+ 
+     pub fn contains(self, bit: u64) -> bool {
+         self.0 & bit != 0

@@ -1,0 +1,6 @@
+main
+    um.o  .text  GLOBAL  FUNC  DEFAULT  size 10
+  => um.o:(.text+0x0), size 10
+f
+    um.o  UND  GLOBAL  NOTYPE  DEFAULT
+  => undefined

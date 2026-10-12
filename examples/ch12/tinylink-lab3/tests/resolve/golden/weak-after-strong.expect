@@ -1,0 +1,2 @@
+# expect: exit 0
+# args: resolve m.o s1.o w3.o

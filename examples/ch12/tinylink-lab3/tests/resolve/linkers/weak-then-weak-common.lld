@@ -1,0 +1,3 @@
+status 0
+_start wdef.o .text size 0
+buf wcom.o COMMON size 4 align 4

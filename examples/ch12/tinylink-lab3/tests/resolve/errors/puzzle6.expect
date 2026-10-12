@@ -1,0 +1,2 @@
+# expect: error "duplicate symbol: x"
+# args: resolve p6-a.o p6-b.o

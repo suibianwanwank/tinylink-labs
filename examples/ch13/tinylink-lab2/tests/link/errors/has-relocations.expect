@@ -1,0 +1,1 @@
+# expect: error "has-relocations.o: relocations are not supported yet: section '.rela.text' has 1 entry"

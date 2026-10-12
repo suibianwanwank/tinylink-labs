@@ -1,0 +1,2 @@
+# expect: exit 0
+# args: resolve st1.o st2.o

@@ -1,0 +1,4 @@
+word-too-large.tl:6:5: error: word 12345 has more than 4 digits; using 9999
+word-too-large.tl:7:5: error: word 10000 has more than 4 digits; using 9999
+word-too-large.tl:4:7: warning: symbol 'x' at index 0 of the use list of module 'a' is not referred to by any E word
+word-too-large.tl:10:7: warning: symbol 'x' is defined but never used

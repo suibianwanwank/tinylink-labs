@@ -1,0 +1,78 @@
+SEC user/cat.o .text 302 2 PROGBITS
+SEC user/cat.o .data 0 1 PROGBITS
+SEC user/cat.o .bss 512 8 NOBITS
+SEC user/cat.o .rodata.str1.8 69 8 PROGBITS
+SYM user/cat.o D buf
+SYM user/cat.o D cat
+SYM user/cat.o U close
+SYM user/cat.o U exit
+SYM user/cat.o U fprintf
+SYM user/cat.o D main
+SYM user/cat.o U open
+SYM user/cat.o U read
+SYM user/cat.o U write
+SEC user/ulib.o .text 740 2 PROGBITS
+SEC user/ulib.o .data 0 1 PROGBITS
+SEC user/ulib.o .bss 0 1 NOBITS
+SYM user/ulib.o D atoi
+SYM user/ulib.o U close
+SYM user/ulib.o U exit
+SYM user/ulib.o U fstat
+SYM user/ulib.o D gets
+SYM user/ulib.o U main
+SYM user/ulib.o D memcmp
+SYM user/ulib.o D memcpy
+SYM user/ulib.o D memmove
+SYM user/ulib.o D memset
+SYM user/ulib.o U open
+SYM user/ulib.o U read
+SYM user/ulib.o D sbrk
+SYM user/ulib.o D sbrklazy
+SYM user/ulib.o D start
+SYM user/ulib.o D stat
+SYM user/ulib.o D strchr
+SYM user/ulib.o D strcmp
+SYM user/ulib.o D strcpy
+SYM user/ulib.o D strlen
+SYM user/ulib.o U sys_sbrk
+SEC user/usys.o .text 176 2 PROGBITS
+SEC user/usys.o .data 0 1 PROGBITS
+SEC user/usys.o .bss 0 1 NOBITS
+SYM user/usys.o D chdir
+SYM user/usys.o D close
+SYM user/usys.o D dup
+SYM user/usys.o D exec
+SYM user/usys.o D exit
+SYM user/usys.o D fork
+SYM user/usys.o D fstat
+SYM user/usys.o D getpid
+SYM user/usys.o D kill
+SYM user/usys.o D link
+SYM user/usys.o D mkdir
+SYM user/usys.o D mknod
+SYM user/usys.o D open
+SYM user/usys.o D pause
+SYM user/usys.o D pipe
+SYM user/usys.o D read
+SYM user/usys.o D sync
+SYM user/usys.o D sys_sbrk
+SYM user/usys.o D unlink
+SYM user/usys.o D uptime
+SYM user/usys.o D wait
+SYM user/usys.o D write
+SEC user/printf.o .text 1028 2 PROGBITS
+SEC user/printf.o .data 0 1 PROGBITS
+SEC user/printf.o .bss 0 1 NOBITS
+SEC user/printf.o .rodata.str1.8 7 8 PROGBITS
+SEC user/printf.o .rodata 17 8 PROGBITS
+SYM user/printf.o D fprintf
+SYM user/printf.o D printf
+SYM user/printf.o D vprintf
+SYM user/printf.o U write
+SEC user/umalloc.o .text 384 2 PROGBITS
+SEC user/umalloc.o .data 0 1 PROGBITS
+SEC user/umalloc.o .bss 16 8 NOBITS
+SEC user/umalloc.o .sbss 8 8 NOBITS
+SYM user/umalloc.o D free
+SYM user/umalloc.o D malloc
+SYM user/umalloc.o U sbrk

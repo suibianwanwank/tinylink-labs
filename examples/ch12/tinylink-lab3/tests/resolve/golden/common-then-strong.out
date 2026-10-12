@@ -1,0 +1,4 @@
+n2
+    cbig.o   COM    GLOBAL  OBJECT  DEFAULT  size 64 align 8
+    n2def.o  .data  GLOBAL  NOTYPE  DEFAULT  size 0
+  => n2def.o:(.data+0x0), size 0

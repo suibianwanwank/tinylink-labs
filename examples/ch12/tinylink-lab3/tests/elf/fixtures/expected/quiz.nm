@@ -1,0 +1,8 @@
+0000000000000000 r .L.str
+                 U limit
+                 U printf
+0000000000000000 T report
+0000000000000004 b report.calls
+0000000000000060 t square
+0000000000000000 B total
+0000000000000000 V verbose

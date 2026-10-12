@@ -1,0 +1,6 @@
+_start
+    many.o  .text  GLOBAL  NOTYPE  DEFAULT  size 0
+  => many.o:(.text+0x0), size 0
+f
+    many.o  UND  GLOBAL  NOTYPE  DEFAULT
+  => undefined

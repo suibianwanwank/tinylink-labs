@@ -1,0 +1,8 @@
+Modules
+  1  a          base 000  size 2
+Symbols
+  helper     001  a
+  main       000  a
+Memory
+  000: 1000
+  001: 0000

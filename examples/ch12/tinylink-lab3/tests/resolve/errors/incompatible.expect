@@ -1,0 +1,3 @@
+# expect: error "a64.o is incompatible with x86.o"
+# args: resolve x86.o a64.o
+# linkers: skip (两个链接器的报错写法不同，tinylink 照 lld 的写)

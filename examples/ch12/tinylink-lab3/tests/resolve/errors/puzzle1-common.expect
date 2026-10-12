@@ -1,0 +1,2 @@
+# expect: error "duplicate symbol: f"
+# args: resolve p1-a-common.o p1-b-common.o

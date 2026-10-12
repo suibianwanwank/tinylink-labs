@@ -1,0 +1,10 @@
+w
+    wref.o  UND  WEAK    NOTYPE  DEFAULT
+    sref.o  UND  GLOBAL  NOTYPE  DEFAULT
+  => undefined
+_start
+    wref.o  .text  GLOBAL  NOTYPE  DEFAULT  size 0
+  => wref.o:(.text+0x0), size 0
+g
+    sref.o  .text  GLOBAL  NOTYPE  DEFAULT  size 0
+  => sref.o:(.text+0x0), size 0

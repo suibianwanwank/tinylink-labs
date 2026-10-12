@@ -1,0 +1,2 @@
+# expect: error "common symbol 'buf' needs space in .bss, which is not supported yet"
+# args: link -o out.tmp c16.o

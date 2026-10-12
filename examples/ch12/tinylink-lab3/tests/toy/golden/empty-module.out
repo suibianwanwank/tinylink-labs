@@ -1,0 +1,10 @@
+Modules
+  1  a          base 000  size 2
+  2  nothing    base 002  size 0
+  3  b          base 002  size 1
+Symbols
+  here       002  b
+Memory
+  000: 0001
+  001: 0002
+  002: 1002

@@ -1,0 +1,13 @@
+
+Relocation section '.rela.text' at offset 0x1b8 contains 5 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+0000000000000013  0000000400000002 R_X86_64_PC32          0000000000000000 .bss - 4
+0000000000000018  0000000500000004 R_X86_64_PLT32         0000000000000000 hook - 4
+0000000000000021  0000000700000009 R_X86_64_GOTPCREL      0000000000000000 maybe - 5
+0000000000000029  0000000700000004 R_X86_64_PLT32         0000000000000000 maybe - 4
+0000000000000035  0000000400000002 R_X86_64_PC32          0000000000000000 .bss - 4
+
+Relocation section '.rela.eh_frame' at offset 0x230 contains 2 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+0000000000000020  0000000200000002 R_X86_64_PC32          0000000000000000 .text + 0
+0000000000000034  0000000200000002 R_X86_64_PC32          0000000000000000 .text + 10

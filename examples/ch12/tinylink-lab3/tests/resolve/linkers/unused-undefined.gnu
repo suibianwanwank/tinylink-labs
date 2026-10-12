@@ -1,0 +1,2 @@
+status 0
+_start unused.o .text size 0

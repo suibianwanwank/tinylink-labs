@@ -1,0 +1,2 @@
+# expect: error "undefined hidden symbol: h"
+# args: resolve hr.o

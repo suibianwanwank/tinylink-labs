@@ -1,0 +1,1 @@
+syntax-missing-module.tl:3:3: error: expected 'module', found 'def'

@@ -1,0 +1,16 @@
+p1
+    p7-a-common.o  .text  GLOBAL  FUNC  DEFAULT  size 1
+  => p7-a-common.o:(.text+0x0), size 1
+main
+    p7-a-common.o  .text  GLOBAL  FUNC  DEFAULT  size 13
+  => p7-a-common.o:(.text+0x10), size 13
+y
+    p7-a-common.o  .data  GLOBAL  OBJECT  DEFAULT  size 4
+  => p7-a-common.o:(.data+0x4), size 4
+x
+    p7-a-common.o  .data  GLOBAL  OBJECT  DEFAULT  size 4
+    p7-b-common.o  COM    GLOBAL  OBJECT  DEFAULT  size 8 align 8
+  => p7-a-common.o:(.data+0x0), size 4
+p2
+    p7-b-common.o  .text  GLOBAL  FUNC  DEFAULT  size 18
+  => p7-b-common.o:(.text+0x0), size 18

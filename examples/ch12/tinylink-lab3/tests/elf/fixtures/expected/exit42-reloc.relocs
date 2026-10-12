@@ -1,0 +1,4 @@
+
+Relocation section '.rela.text' at offset 0xb8 contains 1 entry:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+0000000000000007  0000000200000002 R_X86_64_PC32          0000000000000000 .data - 4

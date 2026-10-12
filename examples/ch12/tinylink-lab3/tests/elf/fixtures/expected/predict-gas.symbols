@@ -1,0 +1,12 @@
+
+Symbol table '.symtab' contains 9 entries:
+   Num:    Value          Size Type    Bind   Vis      Ndx Name
+     0: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 0000000000000000     0 SECTION LOCAL  DEFAULT    3 .data
+     2: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT    6 bump
+     3: 0000000000000000     0 SECTION LOCAL  DEFAULT    6 .text.cold
+     4: 0000000000000008     0 NOTYPE  LOCAL  DEFAULT    3 slot
+     5: 0000000000000000     0 NOTYPE  LOCAL  DEFAULT    7 .Lmsg
+     6: 0000000000000000    26 FUNC    GLOBAL DEFAULT    1 entry
+     7: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT    3 counter
+     8: 0000000000000000     0 NOTYPE  GLOBAL DEFAULT  UND ext_func

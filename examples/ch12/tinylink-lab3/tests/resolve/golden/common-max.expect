@@ -1,0 +1,2 @@
+# expect: exit 0
+# args: resolve c16.o c8.o

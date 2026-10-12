@@ -1,0 +1,13 @@
+[package]
+name = "class3"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.93"
+publish = false
+
+[package.metadata.course]
+implementation = "src/resolve.rs"
+module = "resolve"
+
+[lints.rust]
+unsafe_code = "forbid"

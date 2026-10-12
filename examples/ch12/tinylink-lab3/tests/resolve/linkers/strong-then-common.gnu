@@ -1,0 +1,2 @@
+status 0
+n2 n2def.o .data size 64

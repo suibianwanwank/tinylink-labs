@@ -1,0 +1,13 @@
+Modules
+  1  a          base 000  size 5
+  2  b          base 005  size 1
+Symbols
+  x          004  a
+  y          005  b
+Memory
+  000: 1499
+  001: 2004
+  002: 3004
+  003: 4005
+  004: 9999
+  005: 0005

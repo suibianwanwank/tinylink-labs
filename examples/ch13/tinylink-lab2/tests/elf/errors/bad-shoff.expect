@@ -1,0 +1,1 @@
+# expect: error "bad-shoff.o: section header table: bytes 0xffffffffffff0000..0xffffffffffff03c0 are outside the file (0x6b0 bytes)"

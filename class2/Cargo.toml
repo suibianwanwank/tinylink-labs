@@ -1,0 +1,13 @@
+[package]
+name = "class2"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.93"
+publish = false
+
+[package.metadata.course]
+implementation = "src/symbols.rs"
+module = "symbols"
+
+[lints.rust]
+unsafe_code = "forbid"

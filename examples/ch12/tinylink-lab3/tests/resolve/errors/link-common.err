@@ -1,0 +1,1 @@
+tinylink: error: common symbol 'buf' needs space in .bss, which is not supported yet

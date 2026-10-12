@@ -1,0 +1,2 @@
+# expect: error "duplicate symbol: K"
+# args: resolve abs1.o abs3.o

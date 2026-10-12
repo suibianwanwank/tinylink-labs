@@ -1,0 +1,1 @@
+# expect: warning "cannot find entry symbol _start; not setting start address"

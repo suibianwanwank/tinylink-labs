@@ -1,0 +1,2 @@
+# expect: error "undefined symbol: hook"
+# args: resolve sk.o wk.o

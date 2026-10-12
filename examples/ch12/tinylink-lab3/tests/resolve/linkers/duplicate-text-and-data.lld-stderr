@@ -1,0 +1,3 @@
+tinylink: error: duplicate symbol: f
+>>> defined at dupa.o:(.text+0x1)
+>>> defined at dupb.o:(.data+0x4)

@@ -1,0 +1,7 @@
+[package]
+name = "ehhdr"
+version = "0.1.0"
+edition = "2021"
+
+# Companion tools are independent of the implementation-lab workspace.
+[workspace]

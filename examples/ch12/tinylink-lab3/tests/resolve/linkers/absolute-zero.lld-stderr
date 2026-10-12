@@ -1,0 +1,3 @@
+tinylink: error: duplicate symbol: Z
+>>> defined in zero1.o
+>>> defined in zero2.o

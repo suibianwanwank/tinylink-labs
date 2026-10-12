@@ -1,0 +1,1 @@
+absolute-outside-memory.tl:6:5: error: absolute address 500 is outside memory of 500 words; using address 0

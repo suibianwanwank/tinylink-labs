@@ -1,0 +1,2 @@
+# expect: error "callf.o: relocations are not supported yet: section '.rela.text' has 1 entry"
+# args: link -o out.tmp callf.o deff.o

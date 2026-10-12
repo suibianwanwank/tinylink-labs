@@ -1,0 +1,7 @@
+v
+    vref.o  UND    GLOBAL  NOTYPE  PROTECTED
+    hid.o   .data  GLOBAL  NOTYPE  HIDDEN     size 0
+  => hid.o:(.data+0x0), size 0, HIDDEN
+_start
+    vref.o  .text  GLOBAL  NOTYPE  DEFAULT  size 0
+  => vref.o:(.text+0x0), size 0

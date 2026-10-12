@@ -1,0 +1,2 @@
+# expect: exit 0
+# args: resolve p4-a.o p4-b.o

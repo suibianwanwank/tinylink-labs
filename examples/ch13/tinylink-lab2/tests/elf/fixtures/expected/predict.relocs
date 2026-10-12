@@ -1,0 +1,12 @@
+
+Relocation section '.rela.text' at offset 0x150 contains 4 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+0000000000000002  0000000700000002 R_X86_64_PC32          0000000000000000 counter - 4
+0000000000000007  0000000300000004 R_X86_64_PLT32         0000000000000000 .text.cold - 4
+000000000000000c  0000000800000004 R_X86_64_PLT32         0000000000000000 ext_func - 4
+0000000000000013  0000000200000002 R_X86_64_PC32          0000000000000000 .Lmsg - 4
+
+Relocation section '.rela.data' at offset 0x1b0 contains 2 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+0000000000000008  0000000700000001 R_X86_64_64            0000000000000000 counter + 8
+0000000000000010  0000000400000001 R_X86_64_64            0000000000000000 .data + 8

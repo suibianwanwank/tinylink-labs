@@ -1,0 +1,5 @@
+tinylink: error: undefined symbol: w
+>>> referenced by sref.o:(.text+0x1)
+>>> referenced by wref.o:(.text+0x1)
+>>> did you mean: g
+>>> defined in: sref.o

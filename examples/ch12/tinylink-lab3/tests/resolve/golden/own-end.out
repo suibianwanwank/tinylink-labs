@@ -1,0 +1,12 @@
+main
+    myend.o  .text  GLOBAL  FUNC  DEFAULT  size 7
+  => myend.o:(.text+0x0), size 7
+end
+    myend.o  .data  GLOBAL  OBJECT  DEFAULT  size 4
+  => myend.o:(.data+0x0), size 4
+last
+    myend.o  .data  GLOBAL  OBJECT  DEFAULT  size 8
+  => myend.o:(.data+0x8), size 8
+_end
+    myend.o  UND  GLOBAL  NOTYPE  DEFAULT
+  => defined by the linker (end of the image)

@@ -1,0 +1,5 @@
+tinylink: error: duplicate symbol: n
+>>> defined at p3-a.c
+>>>            p3-a.o:(n)
+>>> defined at p3-b.c
+>>>            p3-b.o:(.bss+0x0)

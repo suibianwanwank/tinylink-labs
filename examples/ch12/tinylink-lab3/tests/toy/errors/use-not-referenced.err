@@ -1,0 +1,1 @@
+use-not-referenced.tl:6:9: warning: symbol 'y' at index 1 of the use list of module 'a' is not referred to by any E word

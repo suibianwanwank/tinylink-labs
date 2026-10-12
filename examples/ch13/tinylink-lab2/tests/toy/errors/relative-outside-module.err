@@ -1,0 +1,1 @@
+relative-outside-module.tl:9:5: error: relative address 3 is outside module 'b' of 3 words; using offset 0

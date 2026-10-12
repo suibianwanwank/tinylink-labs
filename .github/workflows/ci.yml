@@ -1,0 +1,24 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  starter:
+    # Current assignment tests compile but fail until implemented. Completed
+    # prerequisite modules must pass their contracts in every starter snapshot.
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+      - run: cargo metadata --locked --format-version 1 > /dev/null
+      - run: cargo fmt --all --check
+      - run: python3 scripts/check_language.py
+      - run: python3 scripts/audit_course.py --starter
+      - run: cargo clippy --locked --workspace --all-targets -- -D warnings
+      - run: cargo test --locked --workspace --no-run
+      - run: cargo test --locked --workspace --test prerequisites

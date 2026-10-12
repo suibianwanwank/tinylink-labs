@@ -1,0 +1,7 @@
+VERS_1 {
+  global: parse_num;
+  local: *;
+};
+VERS_2 {
+  global: parse_num; parse_num_base;
+} VERS_1;

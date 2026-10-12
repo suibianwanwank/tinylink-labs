@@ -1,0 +1,1 @@
+duplicate-definition.tl:8:7: error: symbol 'x' is already defined in module 'a' (line 4); keeping the first definition

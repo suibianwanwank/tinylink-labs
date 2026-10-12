@@ -1,0 +1,18 @@
+Modules
+  1  main       base 000  size 4
+  2  print      base 004  size 3
+  3  data       base 007  size 2
+Symbols
+  buf        007  data
+  limit      003  main
+  print      005  print
+Memory
+  000: 5000
+  001: 1005
+  002: 2003
+  003: 9007
+  004: 7004
+  005: 6007
+  006: 8005
+  007: 0000
+  008: 0000

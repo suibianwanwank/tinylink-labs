@@ -1,0 +1,5 @@
+tinylink: error: duplicate symbol: f
+>>> defined at p1-a.c
+>>>            p1-a.o:(f)
+>>> defined at p1-b.c
+>>>            p1-b.o:(.text+0x0)

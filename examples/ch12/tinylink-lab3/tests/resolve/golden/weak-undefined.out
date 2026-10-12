@@ -1,0 +1,6 @@
+main
+    hook.o  .text  GLOBAL  FUNC  DEFAULT  size 23
+  => hook.o:(.text+0x0), size 23
+hook
+    hook.o  UND  WEAK  NOTYPE  DEFAULT
+  => undefined weak, value 0

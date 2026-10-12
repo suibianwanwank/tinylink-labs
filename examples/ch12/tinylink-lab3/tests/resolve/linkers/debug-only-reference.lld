@@ -1,0 +1,3 @@
+status 0
+_start dbg.o .text size 0
+u UNDEF

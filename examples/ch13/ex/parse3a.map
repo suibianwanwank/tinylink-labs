@@ -1,0 +1,5 @@
+/* 改坏一：把 VERS_1 整个删掉 */
+VERS_2 {
+  global: parse_num; parse_num_base;
+  local: *;
+};

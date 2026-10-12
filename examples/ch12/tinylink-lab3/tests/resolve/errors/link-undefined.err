@@ -1,0 +1,2 @@
+tinylink: error: undefined symbol: f
+>>> referenced by callf.o:(.text+0x1)

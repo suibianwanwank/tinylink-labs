@@ -1,0 +1,14 @@
+[package]
+name = "icfhash"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+publish = false
+
+# ELF 解析与符号解析复用 tinylink 实验 3（tag lab3）。
+# ../tinylink-lab3 由 fetch-tinylink.sh 用 git archive 导出，不是子模块，也不往 tinylink 仓库提交。
+[dependencies]
+tinylink = { path = "../tinylink-lab3" }
+
+# Companion tools are independent of the implementation-lab workspace.
+[workspace]

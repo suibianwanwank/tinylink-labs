@@ -1,0 +1,8 @@
+main
+    m.o  .text  GLOBAL  FUNC  DEFAULT  size 10
+  => m.o:(.text+0x0), size 10
+counter
+    m.o   UND    GLOBAL  NOTYPE  DEFAULT
+    s1.o  .data  GLOBAL  OBJECT  DEFAULT  size 4
+    w3.o  .data  WEAK    OBJECT  DEFAULT  size 4
+  => s1.o:(.data+0x0), size 4

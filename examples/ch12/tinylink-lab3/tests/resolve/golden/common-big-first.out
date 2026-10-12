@@ -1,0 +1,7 @@
+buf
+    cbigfirst.o  COM  GLOBAL  OBJECT  DEFAULT  size 8 align 8
+    csmall64.o   COM  GLOBAL  OBJECT  DEFAULT  size 4 align 64
+  => COMMON from cbigfirst.o, size 8, align 64
+_start
+    cbigfirst.o  .text  GLOBAL  NOTYPE  DEFAULT  size 0
+  => cbigfirst.o:(.text+0x0), size 0

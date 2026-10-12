@@ -1,0 +1,2 @@
+undefined-symbol.tl:6:5: error: undefined symbol 'nope'; using address 0
+undefined-symbol.tl:8:5: error: undefined symbol 'nope'; using address 0

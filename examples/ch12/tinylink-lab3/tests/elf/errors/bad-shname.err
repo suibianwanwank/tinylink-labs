@@ -1,0 +1,1 @@
+tinylink: error: bad-shname.o: section header 2: sh_name 0x10000 is outside the string table (0xa1 bytes)

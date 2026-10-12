@@ -1,0 +1,3 @@
+status 0
+_start c16.o .text size 0
+buf c8.o COMMON size 8 align 16

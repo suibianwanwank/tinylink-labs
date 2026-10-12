@@ -1,0 +1,5 @@
+tinylink: error: duplicate symbol: x
+>>> defined at p7-a.c
+>>>            p7-a.o:(x)
+>>> defined at p7-b.c
+>>>            p7-b.o:(.bss+0x0)

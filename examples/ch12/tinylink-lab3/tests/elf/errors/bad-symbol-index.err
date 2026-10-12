@@ -1,0 +1,1 @@
+tinylink: error: bad-symbol-index.o: relocation 0 in section 3: symbol index 99 is out of range (there are 10)

@@ -1,0 +1,2 @@
+tinylink: error: undefined hidden symbol: h
+>>> referenced by hr.o:(.text+0x1)

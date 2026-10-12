@@ -1,0 +1,7 @@
+/* 改坏二：留着 VERS_1 节点，删掉旧实现 */
+VERS_1 {
+  local: *;
+};
+VERS_2 {
+  global: parse_num; parse_num_base;
+} VERS_1;

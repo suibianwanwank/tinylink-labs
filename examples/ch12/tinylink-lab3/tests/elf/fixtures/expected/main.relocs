@@ -1,0 +1,13 @@
+
+Relocation section '.rela.text' at offset 0x1e8 contains 2 entries:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+0000000000000003  0000000500000002 R_X86_64_PC32          0000000000000000 counter - 4
+000000000000000d  0000000600000004 R_X86_64_PLT32         0000000000000000 add - 4
+
+Relocation section '.rela.data' at offset 0x218 contains 1 entry:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+0000000000000008  0000000300000001 R_X86_64_64            0000000000000000 .rodata.str1.1 + 0
+
+Relocation section '.rela.eh_frame' at offset 0x230 contains 1 entry:
+    Offset             Info             Type               Symbol's Value  Symbol's Name + Addend
+0000000000000020  0000000200000002 R_X86_64_PC32          0000000000000000 .text + 0

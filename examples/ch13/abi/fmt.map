@@ -1,0 +1,4 @@
+FMT_1 {
+  global: fmt_width;
+  local: *;
+};

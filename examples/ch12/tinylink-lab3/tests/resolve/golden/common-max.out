@@ -1,0 +1,7 @@
+buf
+    c16.o  COM  GLOBAL  OBJECT  DEFAULT  size 4 align 16
+    c8.o   COM  GLOBAL  OBJECT  DEFAULT  size 8 align 8
+  => COMMON from c8.o, size 8, align 16
+_start
+    c16.o  .text  GLOBAL  NOTYPE  DEFAULT  size 0
+  => c16.o:(.text+0x0), size 0

@@ -1,0 +1,1283 @@
+Linux x86_64
+rustc 1.98.1 (48a229cea 2026-09-01)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 8 tests
+test fabricated_header_overflow ... ok
+test file_ranges ... ok
+test section_indexing ... ok
+test header_truncation_never_panics ... ok
+test rejected_formats ... ok
+test section_table_overflow ... ok
+test valid_header ... ok
+test validation_priority_and_full_width_fields ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 6 tests
+test complete_object ... ok
+test names_are_bytes ... ok
+test reject_name_table_and_file_range ... ok
+test memory_only_sections ... ok
+test decode_section ... ok
+test reject_metadata ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 1 test
+test native_assembler_sections ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 8 tests
+test frames_decode_cies_and_fdes ... ok
+test locate_maps_interior_offsets ... ok
+test split_rejects_unsupported_shapes ... ok
+test split_strings_and_constants ... ok
+test unwind_rejects_ranges_overlap_and_reservations ... ok
+test unwind_shares_cies_and_sorts_search_table ... ok
+test frames_reject_malformed_unsupported_and_relocations ... ok
+test merge_shares_pieces_in_first_use_order ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.62s
+
+
+running 6 tests
+test dead_merge_sections_and_fdes_contribute_nothing ... ok
+test inputs_without_new_features_match_class8 ... ok
+test rejects_unsupported_merge_and_unwind_inputs ... ok
+test cli_writes_merge_and_unwind_map ... ok
+test merged_constants_have_one_address ... ok
+test runtime_finds_live_fdes_through_its_program_headers ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.21s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 8 tests
+test got_deduplicates_in_first_use_order ... ok
+test got_encodes_constants_and_relative_records ... ok
+test emit_rejects_bad_tls_reservations ... ok
+test lowering_rejects_tls_mismatches_and_models ... ok
+test lowering_selects_got_relaxation_and_thread_offsets ... ok
+test tls_layout_orders_initialized_before_zero_fill ... ok
+test tls_layout_rejects_bad_sections ... ok
+test tls_startup_descriptor_and_program_header ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 6 tests
+test inputs_without_got_or_tls_match_class9 ... ok
+test rejects_dynamic_tls_and_mismatched_references ... ok
+test cli_map_and_program_headers ... ok
+test got_slots_relaxation_and_weak_references ... ok
+test thread_locals_start_with_their_initial_values ... ok
+test threads_receive_independent_blocks_from_pt_tls ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.16s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 8 tests
+test reject_relocation_ownership ... ok
+test decode_rela ... ok
+test reject_strings_and_truncation ... ok
+test reject_symbol_structure ... ok
+test decode_symbols ... ok
+test symbol_names_and_null_entry_are_not_shortcuts ... ok
+test relocation_empty_table_and_truncation ... ok
+test special_definitions_and_widths ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 1 test
+test native_assembler_relocations ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 6 tests
+test first_weak_and_duplicate_strong ... ok
+test common_merge_and_precedence ... ok
+test local_names_never_collide ... ok
+test strong_replaces_weak_in_both_orders ... ok
+test malformed_symbols_are_rejected ... ok
+test unresolved_is_checked_on_use ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 1 test
+test native_cross_object_resolution ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 4 tests
+test deterministic_output_and_entry_bounds ... ok
+test layout_rejections ... ok
+test elf_and_program_headers ... ok
+test layout_positions ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 5 tests
+test custom_code_section_and_entry ... ok
+test missing_symbol_table_is_explicit ... ok
+test supplied_cli_links_input ... ok
+test reject_unimplemented_input_features ... ok
+test native_link_and_execute ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 6 tests
+test aligned_contributions ... ok
+test exact_signed_boundaries ... ok
+test full_width_modular_arithmetic ... ok
+test merge_rejections ... ok
+test patch_bounds_and_unknown_kind ... ok
+test signed_and_absolute_patches ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 5 tests
+test cross_object_c_call_both_orders ... ok
+test patch_must_not_spill_into_next_contribution ... ok
+test cli_links_multiple_inputs ... ok
+test unresolved_and_forbidden_data ... ok
+test absolute_call_and_unresolved_weak ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 5 tests
+test entry_must_be_in_text_not_padding ... ok
+test stable_kind_order_and_empty_groups ... ok
+test separate_file_and_memory ... ok
+test headers_preserve_payload_and_permissions ... ok
+test validation_and_resource_bounds ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 7 tests
+test data_pointer_relocation_targets_bss ... ok
+test common_definitions_share_zeroed_storage ... ok
+test strong_definition_eliminates_common_allocation ... ok
+test cli_links_writable_globals ... ok
+test tls_is_not_ordinary_bss ... ok
+test c_globals_and_zero_fill_execute ... ok
+test kernel_enforces_ro_and_nx_segments ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.58s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 4 tests
+test short_names_offsets_and_padding ... ok
+test malformed_names ... ok
+test long_names_and_opaque_metadata ... ok
+test malformed_framing ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 6 tests
+test archive_local_fixed_point_and_unused_member ... ok
+test earlier_archive_is_not_revisited ... ok
+test first_provider_satisfies_request ... ok
+test cli_supports_archive_inputs ... ok
+test malformed_unused_member_is_rejected_during_metadata_scan ... ok
+test weak_reference_does_not_extract ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.11s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 4 tests
+test dead_errors_are_not_live_errors ... ok
+test map_is_ordered_and_byte_safe ... ok
+test roots_cycles_and_storage ... ok
+test traversal_order_and_deep_graph ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.13s
+
+
+running 10 tests
+test common_and_weak_storage_liveness ... ok
+test cli_writes_map_and_keeps_explicit_root ... ok
+test backend_roles_split_and_annotation ... ok
+test dead_relocations_are_structural_but_not_applied ... ok
+test explicit_roots_expose_dead_undefined ... ok
+test none_and_metadata_relocations_do_not_retain_storage ... ok
+test roots_and_unsupported_sections_are_checked ... ok
+test selected_definition_controls_edges ... ok
+test archive_selection_precedes_section_gc ... ok
+test transitive_code_data_bss_and_dead_cycle ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 7 tests
+test relative_record_encoding ... ok
+test pic_restrictions_and_none ... ok
+test relative_record_rejections ... ok
+test runtime_pointer_and_failure_atomicity ... ok
+test static_displacements_and_absolute_values ... ok
+test pie_headers_and_descriptor ... ok
+test emission_rejects_bad_destinations ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 8 tests
+test common_weak_and_absolute_values ... ok
+test negative_addend_and_external_absolute ... ok
+test pointer_to_code_data_and_bss ... ok
+test no_runtime_records_and_cli_map ... ok
+test compiler_generated_pie_data_pointer ... ok
+test rejects_non_pic_and_text_runtime_patches ... ok
+test archive_calls_and_initial_stack ... ok
+test runtime_addresses_vary_with_aslr ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.09s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 8 tests
+test fabricated_header_overflow ... ok
+test file_ranges ... ok
+test header_truncation_never_panics ... ok
+test rejected_formats ... ok
+test section_table_overflow ... ok
+test section_indexing ... ok
+test valid_header ... ok
+test validation_priority_and_full_width_fields ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 6 tests
+test complete_object ... ok
+test decode_section ... ok
+test names_are_bytes ... ok
+test reject_name_table_and_file_range ... ok
+test reject_metadata ... ok
+test memory_only_sections ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 1 test
+test native_assembler_sections ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 8 tests
+test frames_decode_cies_and_fdes ... ok
+test locate_maps_interior_offsets ... ok
+test frames_reject_malformed_unsupported_and_relocations ... ok
+test split_strings_and_constants ... ok
+test split_rejects_unsupported_shapes ... ok
+test unwind_rejects_ranges_overlap_and_reservations ... ok
+test unwind_shares_cies_and_sorts_search_table ... ok
+test merge_shares_pieces_in_first_use_order ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+
+running 6 tests
+test dead_merge_sections_and_fdes_contribute_nothing ... ok
+test rejects_unsupported_merge_and_unwind_inputs ... ok
+test inputs_without_new_features_match_class8 ... ok
+test cli_writes_merge_and_unwind_map ... ok
+test runtime_finds_live_fdes_through_its_program_headers ... ok
+test merged_constants_have_one_address ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.20s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 8 tests
+test got_deduplicates_in_first_use_order ... ok
+test got_encodes_constants_and_relative_records ... ok
+test emit_rejects_bad_tls_reservations ... ok
+test lowering_rejects_tls_mismatches_and_models ... ok
+test lowering_selects_got_relaxation_and_thread_offsets ... ok
+test tls_layout_orders_initialized_before_zero_fill ... ok
+test tls_layout_rejects_bad_sections ... ok
+test tls_startup_descriptor_and_program_header ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+
+running 6 tests
+test inputs_without_got_or_tls_match_class9 ... ok
+test rejects_dynamic_tls_and_mismatched_references ... ok
+test cli_map_and_program_headers ... ok
+test got_slots_relaxation_and_weak_references ... ok
+test thread_locals_start_with_their_initial_values ... ok
+test threads_receive_independent_blocks_from_pt_tls ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.15s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 8 tests
+test decode_rela ... ok
+test reject_relocation_ownership ... ok
+test reject_strings_and_truncation ... ok
+test reject_symbol_structure ... ok
+test relocation_empty_table_and_truncation ... ok
+test special_definitions_and_widths ... ok
+test symbol_names_and_null_entry_are_not_shortcuts ... ok
+test decode_symbols ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 1 test
+test native_assembler_relocations ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 6 tests
+test common_merge_and_precedence ... ok
+test first_weak_and_duplicate_strong ... ok
+test malformed_symbols_are_rejected ... ok
+test local_names_never_collide ... ok
+test strong_replaces_weak_in_both_orders ... ok
+test unresolved_is_checked_on_use ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 1 test
+test native_cross_object_resolution ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 4 tests
+test deterministic_output_and_entry_bounds ... ok
+test elf_and_program_headers ... ok
+test layout_positions ... ok
+test layout_rejections ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 5 tests
+test custom_code_section_and_entry ... ok
+test missing_symbol_table_is_explicit ... ok
+test supplied_cli_links_input ... ok
+test reject_unimplemented_input_features ... ok
+test native_link_and_execute ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 6 tests
+test aligned_contributions ... ok
+test exact_signed_boundaries ... ok
+test full_width_modular_arithmetic ... ok
+test merge_rejections ... ok
+test patch_bounds_and_unknown_kind ... ok
+test signed_and_absolute_patches ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+
+running 5 tests
+test patch_must_not_spill_into_next_contribution ... ok
+test absolute_call_and_unresolved_weak ... ok
+test cross_object_c_call_both_orders ... ok
+test cli_links_multiple_inputs ... ok
+test unresolved_and_forbidden_data ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.05s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 5 tests
+test entry_must_be_in_text_not_padding ... ok
+test validation_and_resource_bounds ... ok
+test separate_file_and_memory ... ok
+test stable_kind_order_and_empty_groups ... ok
+test headers_preserve_payload_and_permissions ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 7 tests
+test data_pointer_relocation_targets_bss ... ok
+test common_definitions_share_zeroed_storage ... ok
+test strong_definition_eliminates_common_allocation ... ok
+test tls_is_not_ordinary_bss ... ok
+test cli_links_writable_globals ... ok
+test c_globals_and_zero_fill_execute ... ok
+test kernel_enforces_ro_and_nx_segments ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.65s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 4 tests
+test malformed_framing ... ok
+test long_names_and_opaque_metadata ... ok
+test short_names_offsets_and_padding ... ok
+test malformed_names ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+
+running 6 tests
+test earlier_archive_is_not_revisited ... ok
+test archive_local_fixed_point_and_unused_member ... ok
+test first_provider_satisfies_request ... ok
+test cli_supports_archive_inputs ... ok
+test malformed_unused_member_is_rejected_during_metadata_scan ... ok
+test weak_reference_does_not_extract ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.09s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 4 tests
+test map_is_ordered_and_byte_safe ... ok
+test dead_errors_are_not_live_errors ... ok
+test roots_cycles_and_storage ... ok
+test traversal_order_and_deep_graph ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+
+running 10 tests
+test backend_roles_split_and_annotation ... ok
+test common_and_weak_storage_liveness ... ok
+test cli_writes_map_and_keeps_explicit_root ... ok
+test dead_relocations_are_structural_but_not_applied ... ok
+test explicit_roots_expose_dead_undefined ... ok
+test roots_and_unsupported_sections_are_checked ... ok
+test none_and_metadata_relocations_do_not_retain_storage ... ok
+test selected_definition_controls_edges ... ok
+test transitive_code_data_bss_and_dead_cycle ... ok
+test archive_selection_precedes_section_gc ... ok
+
+test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 7 tests
+test emission_rejects_bad_destinations ... ok
+test pie_headers_and_descriptor ... ok
+test relative_record_encoding ... ok
+test relative_record_rejections ... ok
+test runtime_pointer_and_failure_atomicity ... ok
+test pic_restrictions_and_none ... ok
+test static_displacements_and_absolute_values ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+
+running 8 tests
+test common_weak_and_absolute_values ... ok
+test no_runtime_records_and_cli_map ... ok
+test negative_addend_and_external_absolute ... ok
+test rejects_non_pic_and_text_runtime_patches ... ok
+test pointer_to_code_data_and_bss ... ok
+test compiler_generated_pie_data_pointer ... ok
+test archive_calls_and_initial_stack ... ok
+test runtime_addresses_vary_with_aslr ... ok
+
+test result: ok. 8 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.12s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+{
+  "stage": "class0",
+  "groups": [
+    {
+      "task": "C0.1",
+      "earned": 30,
+      "possible": 30
+    },
+    {
+      "task": "C0.2",
+      "earned": 45,
+      "possible": 45
+    },
+    {
+      "task": "C0.3",
+      "earned": 25,
+      "possible": 25
+    }
+  ],
+  "score": 100,
+  "possible": 100,
+  "cumulative_debug": true,
+  "cumulative_release": true,
+  "complete": true
+}
+{
+  "stage": "class1",
+  "groups": [
+    {
+      "task": "C1.1",
+      "earned": 25,
+      "possible": 25
+    },
+    {
+      "task": "C1.2",
+      "earned": 20,
+      "possible": 20
+    },
+    {
+      "task": "C1.3",
+      "earned": 20,
+      "possible": 20
+    },
+    {
+      "task": "C1.4",
+      "earned": 35,
+      "possible": 35
+    }
+  ],
+  "score": 100,
+  "possible": 100,
+  "cumulative_debug": true,
+  "cumulative_release": true,
+  "complete": true
+}
+{
+  "stage": "class2",
+  "groups": [
+    {
+      "task": "C2.1",
+      "earned": 60,
+      "possible": 60
+    },
+    {
+      "task": "C2.2",
+      "earned": 40,
+      "possible": 40
+    }
+  ],
+  "score": 100,
+  "possible": 100,
+  "cumulative_debug": true,
+  "cumulative_release": true,
+  "complete": true
+}
+{
+  "stage": "class3",
+  "groups": [
+    {
+      "task": "C3.1",
+      "earned": 65,
+      "possible": 65
+    },
+    {
+      "task": "C3.2",
+      "earned": 35,
+      "possible": 35
+    }
+  ],
+  "score": 100,
+  "possible": 100,
+  "cumulative_debug": true,
+  "cumulative_release": true,
+  "complete": true
+}
+{
+  "stage": "class4",
+  "groups": [
+    {
+      "task": "C4.1",
+      "earned": 25,
+      "possible": 25
+    },
+    {
+      "task": "C4.2",
+      "earned": 35,
+      "possible": 35
+    },
+    {
+      "task": "C4.3",
+      "earned": 40,
+      "possible": 40
+    }
+  ],
+  "score": 100,
+  "possible": 100,
+  "cumulative_debug": true,
+  "cumulative_release": true,
+  "complete": true
+}
+{
+  "stage": "class5",
+  "groups": [
+    {
+      "task": "C5.1",
+      "earned": 20,
+      "possible": 20
+    },
+    {
+      "task": "C5.2",
+      "earned": 35,
+      "possible": 35
+    },
+    {
+      "task": "C5.3",
+      "earned": 45,
+      "possible": 45
+    }
+  ],
+  "score": 100,
+  "possible": 100,
+  "cumulative_debug": true,
+  "cumulative_release": true,
+  "complete": true
+}
+{
+  "stage": "class6",
+  "groups": [
+    {
+      "task": "C6.1",
+      "earned": 35,
+      "possible": 35
+    },
+    {
+      "task": "C6.2",
+      "earned": 25,
+      "possible": 25
+    },
+    {
+      "task": "C6.3",
+      "earned": 40,
+      "possible": 40
+    }
+  ],
+  "score": 100,
+  "possible": 100,
+  "cumulative_debug": true,
+  "cumulative_release": true,
+  "complete": true
+}
+{
+  "stage": "class7",
+  "groups": [
+    {
+      "task": "C7.1",
+      "earned": 35,
+      "possible": 35
+    },
+    {
+      "task": "C7.2",
+      "earned": 45,
+      "possible": 45
+    },
+    {
+      "task": "C7.3",
+      "earned": 20,
+      "possible": 20
+    }
+  ],
+  "score": 100,
+  "possible": 100,
+  "cumulative_debug": true,
+  "cumulative_release": true,
+  "complete": true
+}
+{
+  "stage": "class8",
+  "groups": [
+    {
+      "task": "C8.1",
+      "earned": 25,
+      "possible": 25
+    },
+    {
+      "task": "C8.2",
+      "earned": 15,
+      "possible": 15
+    },
+    {
+      "task": "C8.3",
+      "earned": 60,
+      "possible": 60
+    }
+  ],
+  "score": 100,
+  "possible": 100,
+  "cumulative_debug": true,
+  "cumulative_release": true,
+  "complete": true
+}
+{
+  "stage": "class9",
+  "groups": [
+    {
+      "task": "C9.1",
+      "earned": 30,
+      "possible": 30
+    },
+    {
+      "task": "C9.2",
+      "earned": 15,
+      "possible": 15
+    },
+    {
+      "task": "C9.3",
+      "earned": 25,
+      "possible": 25
+    },
+    {
+      "task": "C9.4",
+      "earned": 30,
+      "possible": 30
+    }
+  ],
+  "score": 100,
+  "possible": 100,
+  "cumulative_debug": true,
+  "cumulative_release": true,
+  "complete": true
+}
+{
+  "stage": "class10",
+  "groups": [
+    {
+      "task": "C10.1",
+      "earned": 10,
+      "possible": 10
+    },
+    {
+      "task": "C10.2",
+      "earned": 20,
+      "possible": 20
+    },
+    {
+      "task": "C10.3",
+      "earned": 20,
+      "possible": 20
+    },
+    {
+      "task": "C10.4",
+      "earned": 20,
+      "possible": 20
+    },
+    {
+      "task": "C10.5",
+      "earned": 30,
+      "possible": 30
+    }
+  ],
+  "score": 100,
+  "possible": 100,
+  "cumulative_debug": true,
+  "cumulative_release": true,
+  "complete": true
+}
+{
+  "stage": "class11",
+  "groups": [
+    {
+      "task": "C11.1",
+      "earned": 15,
+      "possible": 15
+    },
+    {
+      "task": "C11.2",
+      "earned": 15,
+      "possible": 15
+    },
+    {
+      "task": "C11.3",
+      "earned": 15,
+      "possible": 15
+    },
+    {
+      "task": "C11.4",
+      "earned": 20,
+      "possible": 20
+    },
+    {
+      "task": "C11.5",
+      "earned": 35,
+      "possible": 35
+    }
+  ],
+  "score": 100,
+  "possible": 100,
+  "cumulative_debug": true,
+  "cumulative_release": true,
+  "complete": true
+}
+PASS: cumulative reference, static PIE, merge and unwind, GOT and TLS, twenty-two rejected mutations
+   Compiling class0 v0.1.0 (/tmp/tinylink-reference.wT1Ovw/class0)
+   Compiling class9 v0.1.0 (/tmp/tinylink-reference.wT1Ovw/class9)
+   Compiling class11 v0.1.0 (/tmp/tinylink-reference.wT1Ovw/class11)
+   Compiling class1 v0.1.0 (/tmp/tinylink-reference.wT1Ovw/class1)
+   Compiling class2 v0.1.0 (/tmp/tinylink-reference.wT1Ovw/class2)
+   Compiling class3 v0.1.0 (/tmp/tinylink-reference.wT1Ovw/class3)
+   Compiling class4 v0.1.0 (/tmp/tinylink-reference.wT1Ovw/class4)
+   Compiling class5 v0.1.0 (/tmp/tinylink-reference.wT1Ovw/class5)
+   Compiling class6 v0.1.0 (/tmp/tinylink-reference.wT1Ovw/class6)
+   Compiling class7 v0.1.0 (/tmp/tinylink-reference.wT1Ovw/class7)
+   Compiling class8 v0.1.0 (/tmp/tinylink-reference.wT1Ovw/class8)
+   Compiling class10 v0.1.0 (/tmp/tinylink-reference.wT1Ovw/class10)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 12.42s
+     Running unittests src/lib.rs (target/debug/deps/class0-3c6bb8fb6a6b4d74)
+     Running tests/contract.rs (target/debug/deps/contract-5e0000fbda4fa74d)
+     Running unittests src/lib.rs (target/debug/deps/class1-1a3a5f100c726eca)
+     Running tests/contract.rs (target/debug/deps/contract-10d4b3fcf42b5f19)
+     Running tests/native.rs (target/debug/deps/native-5810fee42e7e4a85)
+     Running unittests src/lib.rs (target/debug/deps/class10-52190ed1f5034278)
+     Running unittests src/main.rs (target/debug/deps/class10-6bbb8197db7c6b57)
+     Running tests/contract.rs (target/debug/deps/contract-c3a5647fe069422a)
+     Running tests/native.rs (target/debug/deps/native-de5ac4277869c84c)
+     Running unittests src/lib.rs (target/debug/deps/class11-dba17b07e28d26b3)
+     Running unittests src/main.rs (target/debug/deps/class11-97b66a3455ddcba2)
+     Running tests/contract.rs (target/debug/deps/contract-55781c17cdce360c)
+     Running tests/native.rs (target/debug/deps/native-4a58b60a9297f18c)
+     Running unittests src/lib.rs (target/debug/deps/class2-c4296f1cc4bf977a)
+     Running tests/contract.rs (target/debug/deps/contract-ef80327430c926de)
+     Running tests/native.rs (target/debug/deps/native-8ca24c3e20bd5f20)
+     Running unittests src/lib.rs (target/debug/deps/class3-51fbd507c919ca1f)
+     Running tests/contract.rs (target/debug/deps/contract-73a55cf9b91c4d3a)
+     Running tests/native.rs (target/debug/deps/native-c59ac65c8037681c)
+     Running unittests src/lib.rs (target/debug/deps/class4-1627e09fca0254c7)
+     Running unittests src/main.rs (target/debug/deps/class4-ef4db84841e75de7)
+     Running tests/contract.rs (target/debug/deps/contract-faecd8bf844d8b59)
+     Running tests/native.rs (target/debug/deps/native-084a0812d5aed6bc)
+     Running unittests src/lib.rs (target/debug/deps/class5-16f1fb34a475f7e2)
+     Running unittests src/main.rs (target/debug/deps/class5-88b5b71d0c9090ae)
+     Running tests/contract.rs (target/debug/deps/contract-e5293eff63e8811b)
+     Running tests/native.rs (target/debug/deps/native-b5d87560d476fd7a)
+     Running unittests src/lib.rs (target/debug/deps/class6-4b5a8baef66f4c75)
+     Running unittests src/main.rs (target/debug/deps/class6-52e87dda1102d00b)
+     Running tests/contract.rs (target/debug/deps/contract-ba0cba923d6f990b)
+     Running tests/native.rs (target/debug/deps/native-d911c3adc4b5b3e2)
+     Running unittests src/lib.rs (target/debug/deps/class7-0aabf49df1cc9dc2)
+     Running unittests src/main.rs (target/debug/deps/class7-7b3d3f4815e85838)
+     Running tests/contract.rs (target/debug/deps/contract-9e92fc3470cb19f6)
+     Running tests/native.rs (target/debug/deps/native-0cb2073ec7b6677d)
+     Running unittests src/lib.rs (target/debug/deps/class8-45f5d71acfafef83)
+     Running unittests src/main.rs (target/debug/deps/class8-0e906fff917b2407)
+     Running tests/contract.rs (target/debug/deps/contract-a91a75ca2d5ea453)
+     Running tests/native.rs (target/debug/deps/native-8e11b49d73c0a00b)
+     Running unittests src/lib.rs (target/debug/deps/class9-c6c27b29b88b707c)
+     Running unittests src/main.rs (target/debug/deps/class9-538e2264c57715b0)
+     Running tests/contract.rs (target/debug/deps/contract-7458c162eaec4446)
+     Running tests/native.rs (target/debug/deps/native-78c27c75517abcb1)
+   Doc-tests class0
+   Doc-tests class1
+   Doc-tests class10
+   Doc-tests class11
+   Doc-tests class2
+   Doc-tests class3
+   Doc-tests class4
+   Doc-tests class5
+   Doc-tests class6
+   Doc-tests class7
+   Doc-tests class8
+   Doc-tests class9
+   Compiling class0 v0.1.0 (/tmp/tinylink-reference.wT1Ovw/class0)
+   Compiling class9 v0.1.0 (/tmp/tinylink-reference.wT1Ovw/class9)
+   Compiling class11 v0.1.0 (/tmp/tinylink-reference.wT1Ovw/class11)
+   Compiling class1 v0.1.0 (/tmp/tinylink-reference.wT1Ovw/class1)
+   Compiling class2 v0.1.0 (/tmp/tinylink-reference.wT1Ovw/class2)
+   Compiling class3 v0.1.0 (/tmp/tinylink-reference.wT1Ovw/class3)
+   Compiling class4 v0.1.0 (/tmp/tinylink-reference.wT1Ovw/class4)
+   Compiling class5 v0.1.0 (/tmp/tinylink-reference.wT1Ovw/class5)
+   Compiling class6 v0.1.0 (/tmp/tinylink-reference.wT1Ovw/class6)
+   Compiling class7 v0.1.0 (/tmp/tinylink-reference.wT1Ovw/class7)
+   Compiling class8 v0.1.0 (/tmp/tinylink-reference.wT1Ovw/class8)
+   Compiling class10 v0.1.0 (/tmp/tinylink-reference.wT1Ovw/class10)
+    Finished `release` profile [optimized] target(s) in 13.13s
+     Running unittests src/lib.rs (target/release/deps/class0-1b42696d703a0b7c)
+     Running tests/contract.rs (target/release/deps/contract-8d03eea5107b01ef)
+     Running unittests src/lib.rs (target/release/deps/class1-28c03023e8d6717c)
+     Running tests/contract.rs (target/release/deps/contract-79794d338a0617af)
+     Running tests/native.rs (target/release/deps/native-9ee1761250f20bdc)
+     Running unittests src/lib.rs (target/release/deps/class10-b837d7815dc58b98)
+     Running unittests src/main.rs (target/release/deps/class10-0f0351d2c91b3744)
+     Running tests/contract.rs (target/release/deps/contract-3d90a0628bb77a35)
+     Running tests/native.rs (target/release/deps/native-ca33d0c2e0dce11b)
+     Running unittests src/lib.rs (target/release/deps/class11-6a054cbce719ef01)
+     Running unittests src/main.rs (target/release/deps/class11-7b2f7bbeafccb553)
+     Running tests/contract.rs (target/release/deps/contract-b9f5995f8432bb94)
+     Running tests/native.rs (target/release/deps/native-a1f0ce385530e931)
+     Running unittests src/lib.rs (target/release/deps/class2-6e35d6405a6a2f3e)
+     Running tests/contract.rs (target/release/deps/contract-87a16fc81135584f)
+     Running tests/native.rs (target/release/deps/native-189838361efdd709)
+     Running unittests src/lib.rs (target/release/deps/class3-790a4bd76084845c)
+     Running tests/contract.rs (target/release/deps/contract-b6768c753e894c1c)
+     Running tests/native.rs (target/release/deps/native-f12e27d947cc7332)
+     Running unittests src/lib.rs (target/release/deps/class4-73086d5d2cd495a2)
+     Running unittests src/main.rs (target/release/deps/class4-81d42a161238ea87)
+     Running tests/contract.rs (target/release/deps/contract-4c369e800b55a276)
+     Running tests/native.rs (target/release/deps/native-fe4dc9f419959a37)
+     Running unittests src/lib.rs (target/release/deps/class5-0324ab66a1be9e19)
+     Running unittests src/main.rs (target/release/deps/class5-822ab29e133a2bce)
+     Running tests/contract.rs (target/release/deps/contract-4ef6aee84628cffe)
+     Running tests/native.rs (target/release/deps/native-66ba6510264f63f9)
+     Running unittests src/lib.rs (target/release/deps/class6-cd51398610f6bb0b)
+     Running unittests src/main.rs (target/release/deps/class6-732bfccf2d5a5bf4)
+     Running tests/contract.rs (target/release/deps/contract-d0dd7522adba2e40)
+     Running tests/native.rs (target/release/deps/native-b7c26c33d178dea1)
+     Running unittests src/lib.rs (target/release/deps/class7-e9d33dab4cc34bef)
+     Running unittests src/main.rs (target/release/deps/class7-b28082b5babb6690)
+     Running tests/contract.rs (target/release/deps/contract-ee87eeb7160ebf30)
+     Running tests/native.rs (target/release/deps/native-12cfcce14987e3a3)
+     Running unittests src/lib.rs (target/release/deps/class8-bf76402172d2c93c)
+     Running unittests src/main.rs (target/release/deps/class8-f39711b61f14f441)
+     Running tests/contract.rs (target/release/deps/contract-13c907411e0b7c69)
+     Running tests/native.rs (target/release/deps/native-5ea7050f8aeb05f4)
+     Running unittests src/lib.rs (target/release/deps/class9-bc8bcdcb00884044)
+     Running unittests src/main.rs (target/release/deps/class9-8e7ea0052f1d7a70)
+     Running tests/contract.rs (target/release/deps/contract-a6c0b97f496f9f66)
+     Running tests/native.rs (target/release/deps/native-950657ffe0a10626)
+   Doc-tests class0
+   Doc-tests class1
+   Doc-tests class10
+   Doc-tests class11
+   Doc-tests class2
+   Doc-tests class3
+   Doc-tests class4
+   Doc-tests class5
+   Doc-tests class6
+   Doc-tests class7
+   Doc-tests class8
+   Doc-tests class9
+    Checking class0 v0.1.0 (/tmp/tinylink-reference.wT1Ovw/class0)
+   Compiling class9 v0.1.0 (/tmp/tinylink-reference.wT1Ovw/class9)
+   Compiling class11 v0.1.0 (/tmp/tinylink-reference.wT1Ovw/class11)
+    Checking class1 v0.1.0 (/tmp/tinylink-reference.wT1Ovw/class1)
+    Checking class2 v0.1.0 (/tmp/tinylink-reference.wT1Ovw/class2)
+    Checking class3 v0.1.0 (/tmp/tinylink-reference.wT1Ovw/class3)
+    Checking class4 v0.1.0 (/tmp/tinylink-reference.wT1Ovw/class4)
+    Checking class5 v0.1.0 (/tmp/tinylink-reference.wT1Ovw/class5)
+    Checking class6 v0.1.0 (/tmp/tinylink-reference.wT1Ovw/class6)
+    Checking class7 v0.1.0 (/tmp/tinylink-reference.wT1Ovw/class7)
+    Checking class8 v0.1.0 (/tmp/tinylink-reference.wT1Ovw/class8)
+    Checking class10 v0.1.0 (/tmp/tinylink-reference.wT1Ovw/class10)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 2.67s
+

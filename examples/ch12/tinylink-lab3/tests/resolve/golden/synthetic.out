@@ -1,0 +1,21 @@
+main
+    syn.o  .text  GLOBAL  FUNC  DEFAULT  size 3
+  => syn.o:(.text+0x0), size 3
+marks
+    syn.o  .data  GLOBAL  OBJECT  DEFAULT  size 40
+  => syn.o:(.data+0x0), size 40
+__ehdr_start
+    syn.o  UND  GLOBAL  NOTYPE  DEFAULT
+  => defined by the linker (start of the image)
+etext
+    syn.o  UND  GLOBAL  NOTYPE  DEFAULT
+  => defined by the linker (end of the executable segment)
+edata
+    syn.o  UND  GLOBAL  NOTYPE  DEFAULT
+  => defined by the linker (end of initialized data)
+__bss_start
+    syn.o  UND  GLOBAL  NOTYPE  DEFAULT
+  => defined by the linker (start of .bss)
+end
+    syn.o  UND  GLOBAL  NOTYPE  DEFAULT
+  => defined by the linker (end of the image)

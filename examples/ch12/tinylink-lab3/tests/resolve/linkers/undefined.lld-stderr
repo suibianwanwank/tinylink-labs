@@ -1,0 +1,3 @@
+tinylink: error: undefined symbol: f
+>>> referenced by um.c
+>>>               um.o:(main)

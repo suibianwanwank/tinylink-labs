@@ -1,0 +1,10 @@
+Modules
+  1  a          base 000  size 2
+  2  b          base 002  size 1
+Symbols
+  x          000  a
+  y          001  a
+Memory
+  000: 1000
+  001: 0000
+  002: 2001

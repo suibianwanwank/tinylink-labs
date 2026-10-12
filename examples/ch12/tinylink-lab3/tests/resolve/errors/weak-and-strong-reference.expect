@@ -1,0 +1,2 @@
+# expect: error "undefined symbol: w"
+# args: resolve wref.o sref.o

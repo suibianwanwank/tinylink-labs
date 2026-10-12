@@ -1,0 +1,8 @@
+many-problems.tl:5:7: error: symbol 'b_thing' is defined at offset 5, but module 'a' has only 3 words; using offset 0
+many-problems.tl:14:7: error: symbol 'a_thing' is already defined in module 'a' (line 6); keeping the first definition
+many-problems.tl:9:5: error: undefined symbol 'ghost'; using address 0
+many-problems.tl:10:5: error: relative address 7 is outside module 'a' of 3 words; using offset 0
+many-problems.tl:7:13: warning: symbol 'a_thing' at index 1 of the use list of module 'a' is not referred to by any E word
+many-problems.tl:15:7: warning: symbol 'unused_here' at index 0 of the use list of module 'b' is not referred to by any E word
+many-problems.tl:6:7: warning: symbol 'a_thing' is defined but never used
+many-problems.tl:5:7: warning: symbol 'b_thing' is defined but never used

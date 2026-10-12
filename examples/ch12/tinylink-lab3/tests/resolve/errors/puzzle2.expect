@@ -1,0 +1,2 @@
+# expect: error "duplicate symbol: n"
+# args: resolve p2-a.o p2-b.o

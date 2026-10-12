@@ -1,0 +1,6 @@
+missing
+    unused.o  UND  GLOBAL  NOTYPE  DEFAULT
+  => undefined
+_start
+    unused.o  .text  GLOBAL  NOTYPE  DEFAULT  size 0
+  => unused.o:(.text+0x0), size 0

@@ -1,0 +1,2 @@
+# expect: exit 0
+# args: resolve p2-a-common.o p2-b-common.o

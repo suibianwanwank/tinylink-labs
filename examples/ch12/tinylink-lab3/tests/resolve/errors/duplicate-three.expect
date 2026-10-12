@@ -1,0 +1,2 @@
+# expect: error "duplicate symbol: counter"
+# args: resolve m.o s1.o s2.o s3.o

@@ -1,0 +1,3 @@
+_start
+    x86.o  .text  GLOBAL  NOTYPE  DEFAULT  size 0
+  => x86.o:(.text+0x0), size 0

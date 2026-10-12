@@ -1,0 +1,6 @@
+h
+    hu.o  UND  GLOBAL  NOTYPE  HIDDEN
+  => undefined, HIDDEN
+_start
+    hu.o  .text  GLOBAL  NOTYPE  DEFAULT  size 0
+  => hu.o:(.text+0x0), size 0

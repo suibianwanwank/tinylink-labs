@@ -1,0 +1,3 @@
+# expect: error "not-elf.o: not an ELF file: magic is 68 65 6c 6c, expected 7f 45 4c 46"
+# args: resolve not-elf.o dupa.o dupb.o
+# linkers: skip (输入本身不是 ELF)

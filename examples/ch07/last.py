@@ -1,0 +1,15 @@
+import subprocess,sys
+from pathlib import Path
+d=Path(sys.argv[1])
+(d/'abs.c').write_text('int counter;\nint *get(void){ return &counter; }\n')
+(d/'lib2.c').write_text('int missing(int);\nint use(int x) { return missing(x) + 1; }\n')
+(d/'rel.c').write_text('static int table[4];\nint *cursor = &table[2];\n')
+(d/'ptr.c').write_text('static int table[4];\nstatic int quiet(int x) { return x; }\n__attribute__((visibility("hidden"))) int hid(int x) { return x + 1; }\nint loud(int x) { return x + 2; }\n\nint *cursor = &table[2];\nconst char *msg = "hi";\nint (*ops[3])(int) = { quiet, hid, loud };\n')
+(d/'ifn.c').write_text('extern int has_avx2;\nstatic int add_sse(int a, int b) { return a + b; }\nstatic int add_avx(int a, int b) { return b + a; }\nstatic void *pick(void) { return has_avx2 ? (void *)add_avx : (void *)add_sse; }\n__attribute__((visibility("hidden"))) int add(int, int) __attribute__((ifunc("pick")));\nint call(int a, int b) { return add(a, b); }\n')
+(d/'fp.c').write_text('int bump(int);\nint (*fp)(int) = bump;\n\nint main(void) {\n    return fp(1) + (fp == bump);\n}\n')
+(d/'vec2.c').write_text('int counter;\n\n__attribute__((noinline)) int helper(int x) { return x * 2; }\n\n__attribute__((visibility("default"))) int bump(int x) {\n    counter += helper(x);\n    return counter;\n}\n')
+(d/'vec.map').write_text('VEC_1.0 { global: bump; counter; local: *; };')
+(d/'sv.c').write_text('int bump_v1(int x) { return x; }\nint bump_v2(int x) { return x * 2; }\n__asm__(".symver bump_v1, bump@VEC_1.0");\n__asm__(".symver bump_v2, bump@@VEC_2.0");\n')
+(d/'sv.map').write_text('VEC_1.0 { global: bump; local: *; };\nVEC_2.0 { global: bump; } VEC_1.0;\n')
+for cmd in ['musl-gcc -pie main_pie.o -L. -lvec -Wl,--enable-new-dtags,-rpath,\'$ORIGIN\' -Wl,-z,now -o main_pie2; readelf -d main_pie2 | grep -E "RUNPATH|FLAGS"', "ld.lld -shared -rpath '$ORIGIN' vec.o -o r_lld.so; ld -shared -rpath '$ORIGIN' vec.o -o r_bfd.so; readelf -d r_lld.so r_bfd.so | grep PATH", 'llvm-objdump -p main_pie | grep -E "NEEDED|RPATH|RUNPATH"; llvm-objdump -R main_pie | grep RELATIVE | head -2', 'clang -fPIC -O1 -c ptr.c ifn.c sv.c; ld.lld -shared ptr.o -o libptr.so; readelf -rW libptr.so; ld.lld -shared ifn.o -o libifn.so; readelf -rW libifn.so; readelf -sW libifn.so | grep -E " (pick|add)$"', 'clang -fno-pic -O1 -c main.c -o main_nopic.o; musl-gcc -no-pie main_nopic.o -L. -lvec -o main_nopie; readelf -rW main_nopie; readelf -sW main_nopie | grep counter', 'musl-gcc -fPIE -O1 -c main.c -o main_gcc_pie.o; llvm-objdump -dr main_gcc_pie.o; musl-gcc -pie main_gcc_pie.o -L. -lvec -o main_gccpie; readelf -rW main_gccpie | grep counter', 'ld.lld -shared --version-script=sv.map sv.o -o libsv.so; readelf --dyn-syms libsv.so | grep bump', 'ld.lld -shared -soname libvec.so.1 --version-script=vec.map vec.o -o libvec.so.1; readelf --dyn-syms libvec.so.1; readelf -V libvec.so.1; musl-gcc -pie main_pie.o -L. -lvec -o main_ver; readelf -V main_ver; readelf --dyn-syms main_ver | grep -E "bump|counter"']:
+ print("\n$ "+cmd,flush=True); subprocess.run(["sh","-c",cmd],cwd=d)

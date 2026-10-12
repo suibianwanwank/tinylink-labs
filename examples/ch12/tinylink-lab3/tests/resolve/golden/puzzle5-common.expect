@@ -1,0 +1,2 @@
+# expect: exit 0
+# args: resolve p5-a-common.o p5-b-common.o

@@ -1,0 +1,6 @@
+main
+    st1.o  .text  GLOBAL  FUNC  DEFAULT  size 6
+  => st1.o:(.text+0x10), size 6
+other
+    st2.o  .text  GLOBAL  FUNC  DEFAULT  size 6
+  => st2.o:(.text+0x10), size 6

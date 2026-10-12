@@ -1,0 +1,618 @@
+SEC kernel/entry.o .text 32 2 PROGBITS
+SEC kernel/entry.o .data 0 1 PROGBITS
+SEC kernel/entry.o .bss 0 1 NOBITS
+SYM kernel/entry.o D _entry
+SYM kernel/entry.o U stack0
+SYM kernel/entry.o U start
+SEC kernel/start.o .text 190 2 PROGBITS
+SEC kernel/start.o .data 0 1 PROGBITS
+SEC kernel/start.o .bss 32768 16 NOBITS
+SYM kernel/start.o U main
+SYM kernel/start.o D stack0
+SYM kernel/start.o D start
+SYM kernel/start.o D timerinit
+SEC kernel/console.o .text 1042 2 PROGBITS
+SEC kernel/console.o .data 0 1 PROGBITS
+SEC kernel/console.o .bss 168 8 NOBITS
+SEC kernel/console.o .rodata.str1.8 5 8 PROGBITS
+SYM kernel/console.o U acquire
+SYM kernel/console.o D cons
+SYM kernel/console.o D consoleinit
+SYM kernel/console.o D consoleintr
+SYM kernel/console.o D consoleread
+SYM kernel/console.o D consolewrite
+SYM kernel/console.o D consputc
+SYM kernel/console.o U devsw
+SYM kernel/console.o U either_copyin
+SYM kernel/console.o U either_copyout
+SYM kernel/console.o U initlock
+SYM kernel/console.o U killed
+SYM kernel/console.o U myproc
+SYM kernel/console.o U procdump
+SYM kernel/console.o U release
+SYM kernel/console.o U sleep
+SYM kernel/console.o U sleep_prepare
+SYM kernel/console.o U uartinit
+SYM kernel/console.o U uartputc_sync
+SYM kernel/console.o U uartwrite
+SYM kernel/console.o U wakeup
+SEC kernel/printk.o .text 1070 2 PROGBITS
+SEC kernel/printk.o .data 0 1 PROGBITS
+SEC kernel/printk.o .bss 24 8 NOBITS
+SEC kernel/printk.o .rodata.str1.8 27 8 PROGBITS
+SEC kernel/printk.o .rodata 17 8 PROGBITS
+SEC kernel/printk.o .sbss 8 4 NOBITS
+SYM kernel/printk.o U acquire
+SYM kernel/printk.o U consputc
+SYM kernel/printk.o U initlock
+SYM kernel/printk.o D panic
+SYM kernel/printk.o D panicked
+SYM kernel/printk.o D panicking
+SYM kernel/printk.o D printk
+SYM kernel/printk.o D printkinit
+SYM kernel/printk.o U release
+SEC kernel/uart.o .text 438 2 PROGBITS
+SEC kernel/uart.o .data 0 1 PROGBITS
+SEC kernel/uart.o .bss 48 8 NOBITS
+SEC kernel/uart.o .rodata.str1.8 5 8 PROGBITS
+SEC kernel/uart.o .sbss 4 4 NOBITS
+SYM kernel/uart.o U acquiresleep
+SYM kernel/uart.o U consoleintr
+SYM kernel/uart.o U initsleeplock
+SYM kernel/uart.o U panicked
+SYM kernel/uart.o U panicking
+SYM kernel/uart.o U pop_off
+SYM kernel/uart.o U push_off
+SYM kernel/uart.o U releasesleep
+SYM kernel/uart.o U sleep
+SYM kernel/uart.o U sleep_prepare
+SYM kernel/uart.o D uartinit
+SYM kernel/uart.o D uartintr
+SYM kernel/uart.o D uartputc_sync
+SYM kernel/uart.o D uartwrite
+SYM kernel/uart.o U wakeup
+SEC kernel/kalloc.o .text 350 2 PROGBITS
+SEC kernel/kalloc.o .data 0 1 PROGBITS
+SEC kernel/kalloc.o .bss 32 8 NOBITS
+SEC kernel/kalloc.o .rodata.str1.8 13 8 PROGBITS
+SYM kernel/kalloc.o U acquire
+SYM kernel/kalloc.o U end
+SYM kernel/kalloc.o D freerange
+SYM kernel/kalloc.o U initlock
+SYM kernel/kalloc.o D kalloc
+SYM kernel/kalloc.o D kfree
+SYM kernel/kalloc.o D kinit
+SYM kernel/kalloc.o D kmem
+SYM kernel/kalloc.o U memset
+SYM kernel/kalloc.o U panic
+SYM kernel/kalloc.o U release
+SEC kernel/spinlock.o .text 370 2 PROGBITS
+SEC kernel/spinlock.o .data 0 1 PROGBITS
+SEC kernel/spinlock.o .bss 0 1 NOBITS
+SEC kernel/spinlock.o .rodata.str1.8 48 8 PROGBITS
+SYM kernel/spinlock.o D acquire
+SYM kernel/spinlock.o D holding
+SYM kernel/spinlock.o D initlock
+SYM kernel/spinlock.o U mycpu
+SYM kernel/spinlock.o U panic
+SYM kernel/spinlock.o D pop_off
+SYM kernel/spinlock.o D push_off
+SYM kernel/spinlock.o D release
+SEC kernel/string.o .text 442 2 PROGBITS
+SEC kernel/string.o .data 0 1 PROGBITS
+SEC kernel/string.o .bss 0 1 NOBITS
+SYM kernel/string.o D memcmp
+SYM kernel/string.o D memcpy
+SYM kernel/string.o D memmove
+SYM kernel/string.o D memset
+SYM kernel/string.o D safestrcpy
+SYM kernel/string.o D strlen
+SYM kernel/string.o D strncmp
+SYM kernel/string.o D strncpy
+SEC kernel/main.o .text 280 2 PROGBITS
+SEC kernel/main.o .data 0 1 PROGBITS
+SEC kernel/main.o .bss 0 1 NOBITS
+SEC kernel/main.o .rodata.str1.8 50 8 PROGBITS
+SEC kernel/main.o .sbss 4 4 NOBITS
+SYM kernel/main.o U binit
+SYM kernel/main.o U consoleinit
+SYM kernel/main.o U cpuid
+SYM kernel/main.o U fileinit
+SYM kernel/main.o U iinit
+SYM kernel/main.o U kinit
+SYM kernel/main.o U kvminit
+SYM kernel/main.o U kvminithart
+SYM kernel/main.o D main
+SYM kernel/main.o U plicinit
+SYM kernel/main.o U plicinithart
+SYM kernel/main.o U printk
+SYM kernel/main.o U printkinit
+SYM kernel/main.o U procinit
+SYM kernel/main.o U scheduler
+SYM kernel/main.o U trapinit
+SYM kernel/main.o U trapinithart
+SYM kernel/main.o U userinit
+SYM kernel/main.o U virtio_disk_init
+SEC kernel/vm.o .text 2390 2 PROGBITS
+SEC kernel/vm.o .data 0 1 PROGBITS
+SEC kernel/vm.o .bss 0 1 NOBITS
+SEC kernel/vm.o .rodata.str1.8 161 8 PROGBITS
+SEC kernel/vm.o .sbss 8 8 NOBITS
+SYM kernel/vm.o D copyin
+SYM kernel/vm.o D copyinstr
+SYM kernel/vm.o D copyout
+SYM kernel/vm.o U etext
+SYM kernel/vm.o D freewalk
+SYM kernel/vm.o D ismapped
+SYM kernel/vm.o U kalloc
+SYM kernel/vm.o D kernel_pagetable
+SYM kernel/vm.o U kfree
+SYM kernel/vm.o D kvminit
+SYM kernel/vm.o D kvminithart
+SYM kernel/vm.o D kvmmake
+SYM kernel/vm.o D kvmmap
+SYM kernel/vm.o D mappages
+SYM kernel/vm.o U memmove
+SYM kernel/vm.o U memset
+SYM kernel/vm.o U panic
+SYM kernel/vm.o U proc_mapstacks
+SYM kernel/vm.o U trampoline
+SYM kernel/vm.o D uvmalloc
+SYM kernel/vm.o D uvmclear
+SYM kernel/vm.o D uvmcopy
+SYM kernel/vm.o D uvmcreate
+SYM kernel/vm.o D uvmdealloc
+SYM kernel/vm.o D uvmfree
+SYM kernel/vm.o D uvmunmap
+SYM kernel/vm.o D vmfault
+SYM kernel/vm.o D walk
+SYM kernel/vm.o D walkaddr
+SEC kernel/proc.o .text 3656 2 PROGBITS
+SEC kernel/proc.o .data 0 1 PROGBITS
+SEC kernel/proc.o .bss 24112 8 NOBITS
+SEC kernel/proc.o .rodata.str1.8 279 8 PROGBITS
+SEC kernel/proc.o .rodata 48 8 PROGBITS
+SEC kernel/proc.o .sbss 8 8 NOBITS
+SEC kernel/proc.o .sdata 8 4 PROGBITS
+SYM kernel/proc.o U acquire
+SYM kernel/proc.o D allocpid
+SYM kernel/proc.o U begin_op
+SYM kernel/proc.o U copyin
+SYM kernel/proc.o U copyout
+SYM kernel/proc.o D cpuid
+SYM kernel/proc.o D cpus
+SYM kernel/proc.o D either_copyin
+SYM kernel/proc.o D either_copyout
+SYM kernel/proc.o U end_op
+SYM kernel/proc.o U fileclose
+SYM kernel/proc.o U filedup
+SYM kernel/proc.o D forkret
+SYM kernel/proc.o U fsinit
+SYM kernel/proc.o D growproc
+SYM kernel/proc.o U holding
+SYM kernel/proc.o U idup
+SYM kernel/proc.o U initlock
+SYM kernel/proc.o D initproc
+SYM kernel/proc.o U iput
+SYM kernel/proc.o U kalloc
+SYM kernel/proc.o U kexec
+SYM kernel/proc.o D kexit
+SYM kernel/proc.o D kfork
+SYM kernel/proc.o U kfree
+SYM kernel/proc.o D killed
+SYM kernel/proc.o D kkill
+SYM kernel/proc.o U kvmmap
+SYM kernel/proc.o D kwait
+SYM kernel/proc.o U mappages
+SYM kernel/proc.o U memmove
+SYM kernel/proc.o U memset
+SYM kernel/proc.o D mycpu
+SYM kernel/proc.o D myproc
+SYM kernel/proc.o U namei
+SYM kernel/proc.o D nextpid
+SYM kernel/proc.o U panic
+SYM kernel/proc.o D pid_lock
+SYM kernel/proc.o U pop_off
+SYM kernel/proc.o U prepare_return
+SYM kernel/proc.o U printk
+SYM kernel/proc.o D proc
+SYM kernel/proc.o D proc_freepagetable
+SYM kernel/proc.o D proc_mapstacks
+SYM kernel/proc.o D proc_pagetable
+SYM kernel/proc.o D procdump
+SYM kernel/proc.o D procinit
+SYM kernel/proc.o U push_off
+SYM kernel/proc.o U release
+SYM kernel/proc.o D reparent
+SYM kernel/proc.o U safestrcpy
+SYM kernel/proc.o D sched
+SYM kernel/proc.o D scheduler
+SYM kernel/proc.o D setkilled
+SYM kernel/proc.o D sleep
+SYM kernel/proc.o D sleep_prepare
+SYM kernel/proc.o U swtch
+SYM kernel/proc.o U trampoline
+SYM kernel/proc.o D userinit
+SYM kernel/proc.o U userret
+SYM kernel/proc.o U uvmalloc
+SYM kernel/proc.o U uvmcopy
+SYM kernel/proc.o U uvmcreate
+SYM kernel/proc.o U uvmdealloc
+SYM kernel/proc.o U uvmfree
+SYM kernel/proc.o U uvmunmap
+SYM kernel/proc.o D wait_lock
+SYM kernel/proc.o D wakeup
+SYM kernel/proc.o D yield
+SEC kernel/swtch.o .text 106 2 PROGBITS
+SEC kernel/swtch.o .data 0 1 PROGBITS
+SEC kernel/swtch.o .bss 0 1 NOBITS
+SYM kernel/swtch.o D swtch
+SEC kernel/trampoline.o .text 0 2 PROGBITS
+SEC kernel/trampoline.o .data 0 1 PROGBITS
+SEC kernel/trampoline.o .bss 0 1 NOBITS
+SEC kernel/trampoline.o trampsec 292 16 PROGBITS
+SYM kernel/trampoline.o D trampoline
+SYM kernel/trampoline.o D userret
+SYM kernel/trampoline.o U usertrap
+SYM kernel/trampoline.o D uservec
+SEC kernel/trap.o .text 924 2 PROGBITS
+SEC kernel/trap.o .data 0 1 PROGBITS
+SEC kernel/trap.o .bss 24 8 NOBITS
+SEC kernel/trap.o .rodata.str1.8 283 8 PROGBITS
+SEC kernel/trap.o .sbss 4 4 NOBITS
+SYM kernel/trap.o U acquire
+SYM kernel/trap.o D clockintr
+SYM kernel/trap.o U cpuid
+SYM kernel/trap.o D devintr
+SYM kernel/trap.o U initlock
+SYM kernel/trap.o D kerneltrap
+SYM kernel/trap.o U kernelvec
+SYM kernel/trap.o U kexit
+SYM kernel/trap.o U killed
+SYM kernel/trap.o U myproc
+SYM kernel/trap.o U panic
+SYM kernel/trap.o U plic_claim
+SYM kernel/trap.o U plic_complete
+SYM kernel/trap.o D prepare_return
+SYM kernel/trap.o U printk
+SYM kernel/trap.o U release
+SYM kernel/trap.o U setkilled
+SYM kernel/trap.o U syscall
+SYM kernel/trap.o D ticks
+SYM kernel/trap.o D tickslock
+SYM kernel/trap.o U trampoline
+SYM kernel/trap.o D trapinit
+SYM kernel/trap.o D trapinithart
+SYM kernel/trap.o U uartintr
+SYM kernel/trap.o D usertrap
+SYM kernel/trap.o U uservec
+SYM kernel/trap.o U virtio_disk_intr
+SYM kernel/trap.o U vmfault
+SYM kernel/trap.o U wakeup
+SYM kernel/trap.o U yield
+SEC kernel/syscall.o .text 484 2 PROGBITS
+SEC kernel/syscall.o .data 0 1 PROGBITS
+SEC kernel/syscall.o .bss 0 1 NOBITS
+SEC kernel/syscall.o .rodata.str1.8 36 8 PROGBITS
+SEC kernel/syscall.o .rodata 208 8 PROGBITS
+SYM kernel/syscall.o D argaddr
+SYM kernel/syscall.o D argint
+SYM kernel/syscall.o D argstr
+SYM kernel/syscall.o U copyin
+SYM kernel/syscall.o U copyinstr
+SYM kernel/syscall.o D fetchaddr
+SYM kernel/syscall.o D fetchstr
+SYM kernel/syscall.o U myproc
+SYM kernel/syscall.o U panic
+SYM kernel/syscall.o U printk
+SYM kernel/syscall.o U strlen
+SYM kernel/syscall.o U sys_chdir
+SYM kernel/syscall.o U sys_close
+SYM kernel/syscall.o U sys_dup
+SYM kernel/syscall.o U sys_exec
+SYM kernel/syscall.o U sys_exit
+SYM kernel/syscall.o U sys_fork
+SYM kernel/syscall.o U sys_fstat
+SYM kernel/syscall.o U sys_getpid
+SYM kernel/syscall.o U sys_kill
+SYM kernel/syscall.o U sys_link
+SYM kernel/syscall.o U sys_mkdir
+SYM kernel/syscall.o U sys_mknod
+SYM kernel/syscall.o U sys_open
+SYM kernel/syscall.o U sys_pause
+SYM kernel/syscall.o U sys_pipe
+SYM kernel/syscall.o U sys_read
+SYM kernel/syscall.o U sys_sbrk
+SYM kernel/syscall.o U sys_sync
+SYM kernel/syscall.o U sys_unlink
+SYM kernel/syscall.o U sys_uptime
+SYM kernel/syscall.o U sys_wait
+SYM kernel/syscall.o U sys_write
+SYM kernel/syscall.o D syscall
+SEC kernel/sysproc.o .text 604 2 PROGBITS
+SEC kernel/sysproc.o .data 0 1 PROGBITS
+SEC kernel/sysproc.o .bss 0 1 NOBITS
+SYM kernel/sysproc.o U acquire
+SYM kernel/sysproc.o U argaddr
+SYM kernel/sysproc.o U argint
+SYM kernel/sysproc.o U growproc
+SYM kernel/sysproc.o U kexit
+SYM kernel/sysproc.o U kfork
+SYM kernel/sysproc.o U killed
+SYM kernel/sysproc.o U kkill
+SYM kernel/sysproc.o U kwait
+SYM kernel/sysproc.o U myproc
+SYM kernel/sysproc.o U release
+SYM kernel/sysproc.o U sleep
+SYM kernel/sysproc.o U sleep_prepare
+SYM kernel/sysproc.o D sys_exit
+SYM kernel/sysproc.o D sys_fork
+SYM kernel/sysproc.o D sys_getpid
+SYM kernel/sysproc.o D sys_kill
+SYM kernel/sysproc.o D sys_pause
+SYM kernel/sysproc.o D sys_sbrk
+SYM kernel/sysproc.o D sys_uptime
+SYM kernel/sysproc.o D sys_wait
+SYM kernel/sysproc.o U ticks
+SYM kernel/sysproc.o U tickslock
+SEC kernel/bio.o .text 718 2 PROGBITS
+SEC kernel/bio.o .data 0 1 PROGBITS
+SEC kernel/bio.o .bss 34496 8 NOBITS
+SEC kernel/bio.o .rodata.str1.8 55 8 PROGBITS
+SYM kernel/bio.o U acquire
+SYM kernel/bio.o U acquiresleep
+SYM kernel/bio.o D bcache
+SYM kernel/bio.o D binit
+SYM kernel/bio.o D bpin
+SYM kernel/bio.o D bread
+SYM kernel/bio.o D brelse
+SYM kernel/bio.o D bunpin
+SYM kernel/bio.o D bwrite
+SYM kernel/bio.o U holdingsleep
+SYM kernel/bio.o U initlock
+SYM kernel/bio.o U initsleeplock
+SYM kernel/bio.o U panic
+SYM kernel/bio.o U release
+SYM kernel/bio.o U releasesleep
+SYM kernel/bio.o U virtio_disk_rw
+SEC kernel/fs.o .text 3928 2 PROGBITS
+SEC kernel/fs.o .data 0 1 PROGBITS
+SEC kernel/fs.o .bss 6856 8 NOBITS
+SEC kernel/fs.o .rodata.str1.8 269 8 PROGBITS
+SYM kernel/fs.o U acquire
+SYM kernel/fs.o U acquiresleep
+SYM kernel/fs.o U begin_op
+SYM kernel/fs.o U bread
+SYM kernel/fs.o U brelse
+SYM kernel/fs.o D dirlink
+SYM kernel/fs.o D dirlookup
+SYM kernel/fs.o U either_copyin
+SYM kernel/fs.o U either_copyout
+SYM kernel/fs.o U end_op
+SYM kernel/fs.o D fsinit
+SYM kernel/fs.o U holdingsleep
+SYM kernel/fs.o D ialloc
+SYM kernel/fs.o D idup
+SYM kernel/fs.o D iinit
+SYM kernel/fs.o D ilock
+SYM kernel/fs.o U initlock
+SYM kernel/fs.o U initlog
+SYM kernel/fs.o U initsleeplock
+SYM kernel/fs.o D iput
+SYM kernel/fs.o D ireclaim
+SYM kernel/fs.o D itable
+SYM kernel/fs.o D itrunc
+SYM kernel/fs.o D iunlock
+SYM kernel/fs.o D iunlockput
+SYM kernel/fs.o D iupdate
+SYM kernel/fs.o U log_write
+SYM kernel/fs.o U memmove
+SYM kernel/fs.o U memset
+SYM kernel/fs.o U myproc
+SYM kernel/fs.o D namecmp
+SYM kernel/fs.o D namei
+SYM kernel/fs.o D nameiparent
+SYM kernel/fs.o U panic
+SYM kernel/fs.o U printk
+SYM kernel/fs.o D readi
+SYM kernel/fs.o U release
+SYM kernel/fs.o U releasesleep
+SYM kernel/fs.o D sb
+SYM kernel/fs.o D stati
+SYM kernel/fs.o U strncmp
+SYM kernel/fs.o U strncpy
+SYM kernel/fs.o D writei
+SEC kernel/log.o .text 1374 2 PROGBITS
+SEC kernel/log.o .data 0 1 PROGBITS
+SEC kernel/log.o .bss 168 8 NOBITS
+SEC kernel/log.o .rodata.str1.8 107 8 PROGBITS
+SYM kernel/log.o U acquire
+SYM kernel/log.o D begin_op
+SYM kernel/log.o U bpin
+SYM kernel/log.o U bread
+SYM kernel/log.o U brelse
+SYM kernel/log.o U bunpin
+SYM kernel/log.o U bwrite
+SYM kernel/log.o D end_op
+SYM kernel/log.o U initlock
+SYM kernel/log.o D initlog
+SYM kernel/log.o D log
+SYM kernel/log.o D log_write
+SYM kernel/log.o U memmove
+SYM kernel/log.o U panic
+SYM kernel/log.o U printk
+SYM kernel/log.o U release
+SYM kernel/log.o U sleep
+SYM kernel/log.o U sleep_prepare
+SYM kernel/log.o D sys_sync
+SYM kernel/log.o U wakeup
+SEC kernel/sleeplock.o .text 324 2 PROGBITS
+SEC kernel/sleeplock.o .data 0 1 PROGBITS
+SEC kernel/sleeplock.o .bss 0 1 NOBITS
+SEC kernel/sleeplock.o .rodata.str1.8 11 8 PROGBITS
+SYM kernel/sleeplock.o U acquire
+SYM kernel/sleeplock.o D acquiresleep
+SYM kernel/sleeplock.o D holdingsleep
+SYM kernel/sleeplock.o U initlock
+SYM kernel/sleeplock.o D initsleeplock
+SYM kernel/sleeplock.o U myproc
+SYM kernel/sleeplock.o U release
+SYM kernel/sleeplock.o D releasesleep
+SYM kernel/sleeplock.o U sleep
+SYM kernel/sleeplock.o U sleep_prepare
+SYM kernel/sleeplock.o U wakeup
+SEC kernel/file.o .text 1134 2 PROGBITS
+SEC kernel/file.o .data 0 1 PROGBITS
+SEC kernel/file.o .bss 4184 8 NOBITS
+SEC kernel/file.o .rodata.str1.8 58 8 PROGBITS
+SYM kernel/file.o U acquire
+SYM kernel/file.o U begin_op
+SYM kernel/file.o U copyout
+SYM kernel/file.o D devsw
+SYM kernel/file.o U end_op
+SYM kernel/file.o D filealloc
+SYM kernel/file.o D fileclose
+SYM kernel/file.o D filedup
+SYM kernel/file.o D fileinit
+SYM kernel/file.o D fileread
+SYM kernel/file.o D filestat
+SYM kernel/file.o D filewrite
+SYM kernel/file.o D ftable
+SYM kernel/file.o U ilock
+SYM kernel/file.o U initlock
+SYM kernel/file.o U iput
+SYM kernel/file.o U iunlock
+SYM kernel/file.o U myproc
+SYM kernel/file.o U panic
+SYM kernel/file.o U pipeclose
+SYM kernel/file.o U piperead
+SYM kernel/file.o U pipewrite
+SYM kernel/file.o U readi
+SYM kernel/file.o U release
+SYM kernel/file.o U stati
+SYM kernel/file.o U writei
+SEC kernel/pipe.o .text 974 2 PROGBITS
+SEC kernel/pipe.o .data 0 1 PROGBITS
+SEC kernel/pipe.o .bss 0 1 NOBITS
+SEC kernel/pipe.o .rodata.str1.8 5 8 PROGBITS
+SYM kernel/pipe.o U acquire
+SYM kernel/pipe.o U copyin
+SYM kernel/pipe.o U copyout
+SYM kernel/pipe.o U filealloc
+SYM kernel/pipe.o U fileclose
+SYM kernel/pipe.o U initlock
+SYM kernel/pipe.o U kalloc
+SYM kernel/pipe.o U kfree
+SYM kernel/pipe.o U killed
+SYM kernel/pipe.o U myproc
+SYM kernel/pipe.o D pipealloc
+SYM kernel/pipe.o D pipeclose
+SYM kernel/pipe.o D piperead
+SYM kernel/pipe.o D pipewrite
+SYM kernel/pipe.o U release
+SYM kernel/pipe.o U sleep
+SYM kernel/pipe.o U sleep_prepare
+SYM kernel/pipe.o U wakeup
+SEC kernel/exec.o .text 998 2 PROGBITS
+SEC kernel/exec.o .data 0 1 PROGBITS
+SEC kernel/exec.o .bss 0 1 NOBITS
+SEC kernel/exec.o .rodata.str1.8 30 8 PROGBITS
+SYM kernel/exec.o U begin_op
+SYM kernel/exec.o U copyout
+SYM kernel/exec.o U end_op
+SYM kernel/exec.o D flags2perm
+SYM kernel/exec.o U ilock
+SYM kernel/exec.o U iunlockput
+SYM kernel/exec.o D kexec
+SYM kernel/exec.o U myproc
+SYM kernel/exec.o U namei
+SYM kernel/exec.o U panic
+SYM kernel/exec.o U proc_freepagetable
+SYM kernel/exec.o U proc_pagetable
+SYM kernel/exec.o U readi
+SYM kernel/exec.o U safestrcpy
+SYM kernel/exec.o U strlen
+SYM kernel/exec.o U uvmalloc
+SYM kernel/exec.o U uvmclear
+SYM kernel/exec.o U walkaddr
+SEC kernel/sysfile.o .text 3368 2 PROGBITS
+SEC kernel/sysfile.o .data 0 1 PROGBITS
+SEC kernel/sysfile.o .bss 0 1 NOBITS
+SEC kernel/sysfile.o .rodata.str1.8 79 8 PROGBITS
+SYM kernel/sysfile.o U argaddr
+SYM kernel/sysfile.o U argint
+SYM kernel/sysfile.o U argstr
+SYM kernel/sysfile.o U begin_op
+SYM kernel/sysfile.o U copyout
+SYM kernel/sysfile.o U dirlink
+SYM kernel/sysfile.o U dirlookup
+SYM kernel/sysfile.o U end_op
+SYM kernel/sysfile.o U fetchaddr
+SYM kernel/sysfile.o U fetchstr
+SYM kernel/sysfile.o U filealloc
+SYM kernel/sysfile.o U fileclose
+SYM kernel/sysfile.o U filedup
+SYM kernel/sysfile.o U fileread
+SYM kernel/sysfile.o U filestat
+SYM kernel/sysfile.o U filewrite
+SYM kernel/sysfile.o U ialloc
+SYM kernel/sysfile.o U ilock
+SYM kernel/sysfile.o U iput
+SYM kernel/sysfile.o U itrunc
+SYM kernel/sysfile.o U iunlock
+SYM kernel/sysfile.o U iunlockput
+SYM kernel/sysfile.o U iupdate
+SYM kernel/sysfile.o U kalloc
+SYM kernel/sysfile.o U kexec
+SYM kernel/sysfile.o U kfree
+SYM kernel/sysfile.o U memset
+SYM kernel/sysfile.o U myproc
+SYM kernel/sysfile.o U namecmp
+SYM kernel/sysfile.o U namei
+SYM kernel/sysfile.o U nameiparent
+SYM kernel/sysfile.o U panic
+SYM kernel/sysfile.o U pipealloc
+SYM kernel/sysfile.o U readi
+SYM kernel/sysfile.o D sys_chdir
+SYM kernel/sysfile.o D sys_close
+SYM kernel/sysfile.o D sys_dup
+SYM kernel/sysfile.o D sys_exec
+SYM kernel/sysfile.o D sys_fstat
+SYM kernel/sysfile.o D sys_link
+SYM kernel/sysfile.o D sys_mkdir
+SYM kernel/sysfile.o D sys_mknod
+SYM kernel/sysfile.o D sys_open
+SYM kernel/sysfile.o D sys_pipe
+SYM kernel/sysfile.o D sys_read
+SYM kernel/sysfile.o D sys_unlink
+SYM kernel/sysfile.o D sys_write
+SYM kernel/sysfile.o U writei
+SEC kernel/kernelvec.o .text 112 16 PROGBITS
+SEC kernel/kernelvec.o .data 0 1 PROGBITS
+SEC kernel/kernelvec.o .bss 0 1 NOBITS
+SYM kernel/kernelvec.o U kerneltrap
+SYM kernel/kernelvec.o D kernelvec
+SEC kernel/plic.o .text 160 2 PROGBITS
+SEC kernel/plic.o .data 0 1 PROGBITS
+SEC kernel/plic.o .bss 0 1 NOBITS
+SYM kernel/plic.o U cpuid
+SYM kernel/plic.o D plic_claim
+SYM kernel/plic.o D plic_complete
+SYM kernel/plic.o D plicinit
+SYM kernel/plic.o D plicinithart
+SEC kernel/virtio_disk.o .text 1428 2 PROGBITS
+SEC kernel/virtio_disk.o .data 0 1 PROGBITS
+SEC kernel/virtio_disk.o .bss 320 8 NOBITS
+SEC kernel/virtio_disk.o .rodata.str1.8 256 8 PROGBITS
+SYM kernel/virtio_disk.o U acquire
+SYM kernel/virtio_disk.o U initlock
+SYM kernel/virtio_disk.o U kalloc
+SYM kernel/virtio_disk.o U memset
+SYM kernel/virtio_disk.o U panic
+SYM kernel/virtio_disk.o U release
+SYM kernel/virtio_disk.o U sleep
+SYM kernel/virtio_disk.o U sleep_prepare
+SYM kernel/virtio_disk.o D virtio_disk_init
+SYM kernel/virtio_disk.o D virtio_disk_intr
+SYM kernel/virtio_disk.o D virtio_disk_rw
+SYM kernel/virtio_disk.o U wakeup

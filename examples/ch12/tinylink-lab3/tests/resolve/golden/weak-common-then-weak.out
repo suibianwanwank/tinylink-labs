@@ -1,0 +1,7 @@
+buf
+    wcom.o  COM    WEAK  OBJECT  DEFAULT  size 4 align 4
+    wdef.o  .data  WEAK  NOTYPE  DEFAULT  size 0
+  => COMMON from wcom.o, size 4, align 4
+_start
+    wdef.o  .text  GLOBAL  NOTYPE  DEFAULT  size 0
+  => wdef.o:(.text+0x0), size 0
